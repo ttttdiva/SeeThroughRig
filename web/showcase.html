@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aoi / See-through Rig Showcase</title>
+<style>
+  :root {
+    color-scheme: dark;
+    --ink: #eff5ff;
+    --muted: #a8b9d4;
+    --line: rgba(191, 215, 255, .18);
+    --panel: rgba(10, 20, 42, .86);
+    --panel-soft: rgba(20, 37, 70, .72);
+    --accent: #88d7ff;
+    --accent-2: #ffb6da;
+  }
+  * { box-sizing: border-box; }
+  html, body { width: 100%; height: 100%; margin: 0; overflow: hidden; }
+  body {
+    background:
+      radial-gradient(circle at 30% 48%, rgba(57, 99, 167, .34), transparent 36%),
+      radial-gradient(circle at 84% 18%, rgba(135, 82, 148, .25), transparent 30%),
+      #071126;
+    color: var(--ink);
+    font-family: "Segoe UI", "Yu Gothic UI", "Meiryo", sans-serif;
+    letter-spacing: .01em;
+  }
+  #gl { position: fixed; inset: 0; width: 100%; height: 100%; display: block; }
+  .veil {
+    position: fixed; inset: 0; pointer-events: none;
+    background: linear-gradient(90deg, transparent 0%, transparent 65%, rgba(5, 12, 30, .16) 100%);
+  }
+  #brand {
+    position: fixed; left: 48px; top: 40px; z-index: 3;
+    text-shadow: 0 2px 18px rgba(0,0,0,.35);
+  }
+  #brand .eyebrow { color: var(--accent); font-size: 15px; font-weight: 700; letter-spacing: .2em; }
+  #brand h1 { margin: 8px 0 0; font-size: 38px; line-height: 1; font-weight: 700; }
+  #brand p { margin: 10px 0 0; color: var(--muted); font-size: 15px; }
+  #panel {
+    position: fixed; z-index: 4; top: 40px; right: 42px; width: 520px;
+    padding: 26px 28px 22px; border: 1px solid var(--line); border-radius: 22px;
+    background: linear-gradient(145deg, rgba(14, 29, 59, .93), rgba(8, 18, 39, .86));
+    box-shadow: 0 24px 70px rgba(0,0,0,.32), inset 0 1px 0 rgba(255,255,255,.05);
+    backdrop-filter: blur(18px);
+  }
+  #panel .panel-top { display: flex; align-items: start; justify-content: space-between; gap: 18px; }
+  #segment-kicker { color: var(--accent); font-size: 13px; letter-spacing: .16em; font-weight: 700; }
+  #segment-title { margin-top: 6px; font-size: 26px; line-height: 1.15; font-weight: 700; }
+  #segment-detail { margin-top: 7px; color: var(--muted); font-size: 14px; line-height: 1.4; }
+  #timecode { color: #d9e7ff; font-variant-numeric: tabular-nums; font-size: 16px; font-weight: 600; white-space: nowrap; }
+  .rule { height: 1px; margin: 22px 0 16px; background: var(--line); }
+  .section-label { color: #d4e5ff; font-size: 12px; letter-spacing: .15em; font-weight: 700; text-transform: uppercase; }
+  #params { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 12px; margin-top: 12px; }
+  .param {
+    min-height: 66px; padding: 10px 12px; border: 1px solid rgba(187, 213, 255, .12);
+    border-radius: 12px; background: rgba(255,255,255,.045);
+  }
+  .param .label { display: block; color: var(--muted); font-size: 12px; line-height: 1.25; }
+  .param .value { display: block; margin-top: 5px; color: #f5f9ff; font-size: 20px; font-weight: 700; font-variant-numeric: tabular-nums; }
+  .param .value em { color: var(--accent-2); font-size: 13px; font-style: normal; font-weight: 600; }
+  #expression {
+    display: inline-flex; align-items: center; gap: 8px; margin-top: 16px; padding: 8px 11px;
+    border-radius: 999px; background: rgba(255, 182, 218, .12); color: #ffd6e9; font-size: 14px; font-weight: 600;
+  }
+  #expression::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--accent-2); box-shadow: 0 0 12px var(--accent-2); }
+  #note {
+    margin-top: 18px; padding: 12px 14px; border-left: 2px solid var(--accent);
+    color: #c0d2ed; background: rgba(100, 173, 236, .07); font-size: 13px; line-height: 1.55;
+  }
+  #footer {
+    position: fixed; z-index: 3; left: 48px; right: 600px; bottom: 34px;
+    color: #aabbd4; font-size: 13px; line-height: 1.55; text-shadow: 0 2px 12px rgba(0,0,0,.45);
+  }
+  #footer .tag { color: #dce9ff; font-weight: 600; }
+  #error {
+    display: none; position: fixed; z-index: 9; inset: 32px; padding: 20px; border-radius: 14px;
+    color: #fff; background: rgba(107, 20, 45, .95); font: 16px/1.5 monospace; white-space: pre-wrap;
+  }
+  @media (max-width: 1200px) {
+    #panel { right: 22px; width: 430px; }
+    #brand { left: 28px; }
+    #footer { left: 28px; right: 480px; }
+  }
+</style>
+</head>
+<body>
+<canvas id="gl" aria-label="Aoi WebGL preview"></canvas>
+<div class="veil"></div>
+<div id="brand">
+  <div class="eyebrow">SEE-THROUGH RIG / WEBGL2</div>
+  <h1>Aoi showcase</h1>
+  <p>一枚絵から生まれた、再生可能な 2D キャラクターリグ</p>
+</div>
+<aside id="panel" aria-label="Live rig parameters">
+  <div class="panel-top">
+    <div>
+      <div id="segment-kicker">01 / NORMAL</div>
+      <div id="segment-title">通常</div>
+      <div id="segment-detail">待機・呼吸・視線・首の傾き</div>
+    </div>
+    <div id="timecode">00:00.0</div>
+  </div>
+  <div id="expression">表情: 通常</div>
+  <div class="rule"></div>
+  <div class="section-label">live parameters</div>
+  <div id="params">
+    <div class="param"><span class="label">頭の傾き · AngleZ</span><span class="value" data-param="AngleZ">0.0°</span></div>
+    <div class="param"><span class="label">頭のうなずき · AngleY</span><span class="value" data-param="AngleY">0.0°</span></div>
+    <div class="param"><span class="label">体の前後 · BodyAngleY</span><span class="value" data-param="BodyAngleY">0.0</span></div>
+    <div class="param"><span class="label">体の左右 · BodyAngleX</span><span class="value" data-param="BodyAngleX">0.0</span></div>
+    <div class="param"><span class="label">体の傾き · BodyAngleZ</span><span class="value" data-param="BodyAngleZ">0.0°</span></div>
+    <div class="param"><span class="label">呼吸 · Breath</span><span class="value" data-param="Breath">0.00</span></div>
+    <div class="param"><span class="label">視線 · EyeBallX / Y</span><span class="value" data-param="EyeBall">0.00 / 0.00</span></div>
+    <div class="param"><span class="label">瞬き · EyeL / EyeR</span><span class="value" data-param="Eyes">1.00 / 1.00</span></div>
+    <div class="param"><span class="label">口の開閉 · MouthOpenY</span><span class="value" data-param="MouthOpenY">0.00</span></div>
+    <div class="param"><span class="label">母音 · MouthVowel</span><span class="value" data-param="MouthVowel">0 <em>legacy</em></span></div>
+    <div class="param"><span class="label">風 · Wind / WindBlow</span><span class="value" data-param="Wind">0.00 / 0.00</span></div>
+    <div class="param"><span class="label">揺れ · PhysicsGain</span><span class="value" data-param="PhysicsGain">1.00</span></div>
+  </div>
+  <div id="note">視線は瞳の可動域に収まり、髪・リボン・スカートは束ごとの物理で追従します。</div>
+</aside>
+<div id="footer"><span class="tag">45 seconds · 1920 × 1080 · 30 fps</span><br>琴葉葵 (c) AI Inc. 非公式二次創作 / See-through Rig public demo</div>
+<div id="error" role="alert"></div>
+<script type="module" src="showcase.js"></script>
+</body>
+</html>

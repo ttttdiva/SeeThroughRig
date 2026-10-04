@@ -1,0 +1,23 @@
+<!doctype html><meta charset="utf-8"><title>Aoi face keys candidate review</title>
+<style>body{font:16px system-ui;background:#eaf0f5;margin:0;display:flex}canvas{width:700px;height:700px;background:white}aside{padding:18px;width:430px}button{padding:8px;margin:3px}pre{white-space:pre-wrap;font-size:12px}h2{font-size:18px}@media(max-width:800px){body{display:block}canvas{width:min(100vw,700px);height:min(100vw,700px)}aside{width:auto;padding:12px}} </style>
+<canvas id="gl" width="700" height="700"></canvas><aside><h2>Aoi eye + a/i/u/e/o keys</h2>
+<p>Eye and mouth key review; default model or ?model=models/aoi_vowels.</p><div id="buttons"></div><pre id="status">Loading…</pre></aside>
+<script type="module">
+import {RigRuntime} from './js/runtime/index.js';
+const out=document.getElementById('status'), buttons=document.getElementById('buttons');
+let pose={},auto=false,mode='neutral',blinkMin=1,blinkMax=0;
+try{
+const rig=await RigRuntime.create(document.getElementById('gl'),(new URLSearchParams(location.search).get('model') || 'models/aoi')+'/model.json',{preserveDrawingBuffer:true});
+rig.setView('face');rig.renderer.background=[.933,.941,.957,1];
+Object.assign(rig.animator.options,{idle:false,breath:false,blink:false,saccade:false,lookAt:false});
+function apply(label,P={},options={}){mode=label;pose=P;auto=!!options.auto;rig.setExpression(options.expression??null);rig.setMouth({open:options.vowel?1:0,speaking:!!options.vowel,vowel:options.vowel??null});rig.animator.manual={...P};rig.animator.options.blink=auto;blinkMin=1;blinkMax=0;}
+function button(label,P,options){const b=document.createElement('button');b.textContent=label;b.onclick=()=>apply(label,P,options);buttons.append(b);}
+button('Open eyes',{});button('Half eyes',{EyeLOpen:.5,EyeROpen:.5});button('Closed eyes',{EyeLOpen:0,EyeROpen:0});button('Wink L',{EyeLOpen:0});button('Wink R',{EyeROpen:0});button('Auto blink',{}, {auto:true});
+for(const v of ['a','i','u','e','o'])button(v.toUpperCase()+' vowel',{}, {vowel:v});
+button('Closed + roll',{EyeLOpen:0,EyeROpen:0,AngleZ:30});button('A + roll',{AngleZ:30},{vowel:'a'});button('Surprised',{}, {expression:'surprised'});button('Surprised + E',{}, {expression:'surprised',vowel:'e'});button('Happy + I',{}, {expression:'happy',vowel:'i'});
+for(const open of [.179,.1795,.18]){const b=document.createElement('button');b.textContent='A open '+open;b.onclick=()=>{apply(b.textContent,{}, {vowel:'a'});rig.setMouth({open,speaking:true,vowel:'a'});};buttons.append(b);}
+const legacy=document.createElement('button');legacy.textContent='Legacy open';legacy.onclick=()=>{apply('Legacy open');rig.setMouth({open:1,speaking:true});};buttons.append(legacy);
+const seek=document.createElement('button');seek.textContent='Seek 2 → 0';seek.onclick=()=>{rig.frame(2);rig.frame(0);};buttons.append(seek);
+let last=performance.now();function tick(now){rig.step(Math.max(0,Math.min(.05,(now-last)/1000)));last=now;blinkMin=Math.min(blinkMin,rig.params.get('EyeLOpen'));blinkMax=Math.max(blinkMax,rig.params.get('EyeLOpen'));const visible=[...rig.deformer.opacity].filter(([id,a])=>(id==='mouth'||id.startsWith('mouth-'))&&a>.001);out.textContent=JSON.stringify({mode,capabilities:rig.capabilities.mouthVowels,blink:rig.capabilities.blink,open:rig.params.get('MouthOpenY'),vowel:rig.params.get('MouthVowel'),eyes:[rig.params.get('EyeLOpen'),rig.params.get('EyeROpen')],autoBlinkRange:[blinkMin,blinkMax],visibleMouth:visible,webgl:rig.renderer.gl.getParameter(rig.renderer.gl.VERSION)},null,2);requestAnimationFrame(tick);}requestAnimationFrame(tick);
+}catch(e){out.textContent=e.stack;throw e;}
+</script>

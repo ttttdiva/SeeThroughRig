@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aoi showcase · See-through Rig</title>
+  <style>
+    :root { color-scheme: dark; --ink: #eef5ff; --muted: #afc0da; --line: rgba(190,220,255,.18); --accent: #86d8ff; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; color: var(--ink); background: #071126; font-family: "Segoe UI", "Yu Gothic UI", sans-serif; }
+    main { width: min(1120px, calc(100% - 36px)); margin: 0 auto; padding: 56px 0 64px; }
+    .eyebrow { color: var(--accent); font-size: 13px; font-weight: 700; letter-spacing: .18em; }
+    h1 { margin: 10px 0 8px; font-size: clamp(30px, 5vw, 56px); line-height: 1.05; }
+    .lead { max-width: 720px; margin: 0 0 28px; color: var(--muted); font-size: 17px; line-height: 1.6; }
+    .frame { overflow: hidden; border: 1px solid var(--line); border-radius: 20px; background: #020916; box-shadow: 0 24px 80px rgba(0,0,0,.35); }
+    video { display: block; width: 100%; height: auto; background: #020916; }
+    .under { display: flex; flex-wrap: wrap; gap: 12px 22px; align-items: center; padding: 18px 20px; color: var(--muted); line-height: 1.5; }
+    a { color: var(--accent); }
+    .under a { font-weight: 600; }
+    .params { margin-top: 28px; padding: 22px 24px; border: 1px solid var(--line); border-radius: 16px; background: rgba(15,31,62,.62); }
+    h2 { margin: 0 0 12px; font-size: 20px; }
+    .params p { margin: 0; color: var(--muted); line-height: 1.65; }
+    .notice { margin-top: 26px; color: var(--muted); font-size: 13px; line-height: 1.6; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="eyebrow">SEE-THROUGH RIG · Aoi</div>
+    <h1>One illustration, a live 2D rig.</h1>
+    <p class="lead">A 45-second public recording of the adopted 琴葉葵 model. The on-screen panel reports the real runtime parameters while the model moves through expressions, winks, five vowels, breath, gaze, body motion and wind.</p>
+    <div class="frame">
+      <video controls preload="metadata" poster="docs/media/aoi-showcase.jpg">
+        <source src="docs/media/aoi-showcase.mp4" type="video/mp4">
+        <a href="docs/media/aoi-showcase.mp4">Download the MP4 showcase</a>
+      </video>
+      <div class="under">
+        <span>45 seconds · 1920 × 1080 · 30 fps</span>
+        <a href="web/showcase.html">Open the interactive WebGL showcase</a>
+        <a href="docs/media/aoi-showcase.mp4" download>Download MP4</a>
+      </div>
+    </div>
+    <section class="params">
+      <h2>Visible parameters</h2>
+      <p>AngleZ · AngleY · BodyAngleX/Y/Z · Breath · EyeBallX/Y · EyeLOpen/ROpen · MouthOpenY · MouthVowel · Wind · WindBlow · PhysicsGain</p>
+    </section>
+    <p class="notice">琴葉葵 © AI Inc. · unofficial derivative work. See the <a href="https://aivoice.jp/character/kotonoha/">official character page</a> for current guidelines.</p>
+  </main>
+</body>
+</html>

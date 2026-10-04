@@ -1,0 +1,216 @@
+{
+  "package": "@aoitalk/seethrough-rig-runtime",
+  "version": "0.1.0",
+  "abi": 1,
+  "source_head": "0d597332049a4662daa76528c449ea96d4c26cec",
+  "generator_commit": "0d597332049a4662daa76528c449ea96d4c26cec",
+  "source_mode": "git",
+  "engines": [
+    {
+      "id": "canonical",
+      "source": "git",
+      "head": "0d597332049a4662daa76528c449ea96d4c26cec"
+    },
+    {
+      "id": "baseline46c",
+      "core_ref": "46c0037779fb5e59715030925d66abdc6c09ca12",
+      "source": "git"
+    }
+  ],
+  "first_party_upstream_license": "unspecified",
+  "third_party_dependencies": [],
+  "files": [
+    {
+      "path": "FIRST_PARTY_NOTICE.md",
+      "size": 476,
+      "sha256": "5074ee6afbaab6afece0419d3ebdadd867b567631420bb1685a42b2e42ce2309",
+      "source_path": "generated",
+      "source_commit": null,
+      "source": "generated"
+    },
+    {
+      "path": "README.md",
+      "size": 17282,
+      "sha256": "dc1dc080735354b9d54d5e2f9bbc850de80e023fca910c89cade4ede157d6a3a",
+      "source_path": "docs/runtime.md",
+      "source_commit": "0d597332049a4662daa76528c449ea96d4c26cec",
+      "source": "git"
+    },
+    {
+      "path": "index.d.ts",
+      "size": 6776,
+      "sha256": "ac0bd473494fc0abd59f40210e728de105bca4a09d3606fae812205b6cc925d8",
+      "source_path": "web/js/runtime/index.d.ts",
+      "source_commit": "0d597332049a4662daa76528c449ea96d4c26cec",
+      "source": "git"
+    },
+    {
+      "path": "index.js",
+      "size": 43,
+      "sha256": "82ad7eccdb73721684f56b2613250091486a69951ca76ad955e72d1e8eabf1c3",
+      "source_path": "web/js/runtime/index.js",
+      "source_commit": "0d597332049a4662daa76528c449ea96d4c26cec",
+      "source": "generated"
+    },
+    {
+      "path": "package.json",
+      "size": 540,
+      "sha256": "b1da76c3faa1d10fedafb920a297d494e5a81a122e67f87eeda0005c30d0ee9f",
+      "source_path": "web/js/runtime/package.json",
+      "source_commit": "0d597332049a4662daa76528c449ea96d4c26cec",
+      "source": "generated"
+    },
+    {
+      "path": "web/js/core/deform.js",
+      "size": 22364,
+      "sha256": "82d267fdffeaf5b5ea37451742da0d1506ad25c3c5f4a44bb103daafdb5a2b00",
+      "source_path": "web/js/core/deform.js",
+      "source_commit": "0d597332049a4662daa76528c449ea96d4c26cec",
+      "source": "git"
+    },
+    {
+      "path": "web/js/core/model.js",
+      "size": 10820,
+      "sha256": "ed9144566d1097d4779cd29c68993b42bf13c9a6da2e8692cd36fd8c1985ba1e",
+      "source_path": "web/js/core/model.js",
+      "source_commit": "0d597332049a4662daa76528c449ea96d4c26cec",
+      "source": "git"
+    },
+    {
+      "path": "web/js/core/motion.js",
+      "size": 18657,
+      "sha256": "b1e8ee7a2c8b152721d25ef346a44dd1769f2dc684680c3439e51cffc9e3cef2",
+      "source_path": "web/js/core/motion.js",
+      "source_commit": "0d597332049a4662daa76528c449ea96d4c26cec",
+      "source": "git"
+    },
+    {
+      "path": "web/js/core/params.js",
+      "size": 2717,
+      "sha256": "d7d7fed2d5adf4928e6802157a73e1db6209a53b958653a4aef2ec5eddb3850a",
+      "source_path": "web/js/core/params.js",
+      "source_commit": "0d597332049a4662daa76528c449ea96d4c26cec",
+      "source": "git"
+    },
+    {
+      "path": "web/js/core/physics.js",
+      "size": 10697,
+      "sha256": "d4cf04504bd4fc298dcacf0a9f6dbef6ab524df6a6d59eba19922346e9648446",
+      "source_path": "web/js/core/physics.js",
+      "source_commit": "0d597332049a4662daa76528c449ea96d4c26cec",
+      "source": "git"
+    },
+    {
+      "path": "web/js/core/puppet.js",
+      "size": 557,
+      "sha256": "a9994147eccc906171f7f76a9544e1efb1cda6d5e9d0fa5ed4cde28e620ee276",
+      "source_path": "web/js/core/puppet.js",
+      "source_commit": "0d597332049a4662daa76528c449ea96d4c26cec",
+      "source": "git"
+    },
+    {
+      "path": "web/js/core/renderer.js",
+      "size": 15803,
+      "sha256": "2f90785b12a5aae395af77fc7558b9b1276a0cc0437d5fa51535b13d12239992",
+      "source_path": "web/js/core/renderer.js",
+      "source_commit": "0d597332049a4662daa76528c449ea96d4c26cec",
+      "source": "git"
+    },
+    {
+      "path": "web/js/runtime-baseline/deform.js",
+      "size": 18075,
+      "sha256": "73fc1b93fa64316319a8fa76d2e93ac0123947f1115dbfb7cd6ebd268fdaf2f1",
+      "source_path": "web/js/core/deform.js",
+      "source_commit": "46c0037779fb5e59715030925d66abdc6c09ca12",
+      "source": "git"
+    },
+    {
+      "path": "web/js/runtime-baseline/motion.js",
+      "size": 13192,
+      "sha256": "50689c065cf22ade614934aad449c2fd26702411450668dc6964129e288458a0",
+      "source_path": "web/js/core/motion.js",
+      "source_commit": "46c0037779fb5e59715030925d66abdc6c09ca12",
+      "source": "git"
+    },
+    {
+      "path": "web/js/runtime-baseline/params.js",
+      "size": 2440,
+      "sha256": "47f16986a1343cc44d4b8beb7a93e29a2aefbfe8a472bc46287fa857d2adf443",
+      "source_path": "web/js/core/params.js",
+      "source_commit": "46c0037779fb5e59715030925d66abdc6c09ca12",
+      "source": "git"
+    },
+    {
+      "path": "web/js/runtime-baseline/physics.js",
+      "size": 9531,
+      "sha256": "523c971973acf34d2aa00facd27b74c45955d3de8af5e3540036469753df5b2a",
+      "source_path": "web/js/core/physics.js",
+      "source_commit": "46c0037779fb5e59715030925d66abdc6c09ca12",
+      "source": "git"
+    },
+    {
+      "path": "web/js/runtime/engine.js",
+      "size": 276,
+      "sha256": "6c3e2ee7389e245aae1b1ee1c877fc676b129380a25320c2ced88d082f5a6913",
+      "source_path": "web/js/runtime/engine.js",
+      "source_commit": "0d597332049a4662daa76528c449ea96d4c26cec",
+      "source": "git"
+    },
+    {
+      "path": "web/js/runtime/host.js",
+      "size": 20997,
+      "sha256": "6de93023984e7eadced400e71fc62b08883b5401c49524c9ee27dbf63373a3ba",
+      "source_path": "web/js/runtime/host.js",
+      "source_commit": "0d597332049a4662daa76528c449ea96d4c26cec",
+      "source": "git"
+    },
+    {
+      "path": "web/js/runtime/index.d.ts",
+      "size": 6776,
+      "sha256": "ac0bd473494fc0abd59f40210e728de105bca4a09d3606fae812205b6cc925d8",
+      "source_path": "web/js/runtime/index.d.ts",
+      "source_commit": "0d597332049a4662daa76528c449ea96d4c26cec",
+      "source": "git"
+    },
+    {
+      "path": "web/js/runtime/index.js",
+      "size": 1353,
+      "sha256": "2513d48a18f30c6944b0c686fcd2c34e5a725efe1f9e23ba351d75de3148185b",
+      "source_path": "web/js/runtime/index.js",
+      "source_commit": "0d597332049a4662daa76528c449ea96d4c26cec",
+      "source": "git"
+    },
+    {
+      "path": "web/js/runtime/playback-settings-panel.js",
+      "size": 9537,
+      "sha256": "41d3e58519367749b36d982f8bd6884a756cefe86305c9f9f0f9894466249665",
+      "source_path": "web/js/runtime/playback-settings-panel.js",
+      "source_commit": "0d597332049a4662daa76528c449ea96d4c26cec",
+      "source": "git"
+    },
+    {
+      "path": "web/js/runtime/playback-settings-schema.js",
+      "size": 9513,
+      "sha256": "ab0f5c4ad74b04f1ba8e192f138fceb768c4a1447dc981f171d21b6c24972a20",
+      "source_path": "web/js/runtime/playback-settings-schema.js",
+      "source_commit": "0d597332049a4662daa76528c449ea96d4c26cec",
+      "source": "git"
+    },
+    {
+      "path": "web/js/runtime/playback-settings.js",
+      "size": 6608,
+      "sha256": "ff3bd070d4a0eee95a9c26f4b5edaea60b948ae8b7fa00e730aaee0e6b340ed7",
+      "source_path": "web/js/runtime/playback-settings.js",
+      "source_commit": "0d597332049a4662daa76528c449ea96d4c26cec",
+      "source": "git"
+    },
+    {
+      "path": "web/js/runtime/playback-settings.schema.json",
+      "size": 9395,
+      "sha256": "af981a2120d7dff626c51427d8e712fdd6bdc468f76fe0f7e0be78be0c75bffc",
+      "source_path": "web/js/runtime/playback-settings.schema.json",
+      "source_commit": "0d597332049a4662daa76528c449ea96d4c26cec",
+      "source": "git"
+    }
+  ]
+}

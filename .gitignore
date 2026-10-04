@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+
+# Node
+node_modules/
+
+# Heavy intermediate data (See-through raw output, frame dumps)
+work/
+out/frames/
+*.psd
+
+# Reference material that must not be redistributed
+reference/
+*.egg-info/
+out/
+web/models/*/rest_composite.png
+
+# local tool state (not part of the project)
+.local/
+
+# Isolated production inputs, artwork, logs and immutable exports
+projects/

@@ -1,0 +1,1194 @@
+{
+  "schema_version": 1,
+  "tool_version": "1",
+  "projection": "aoi-public-v1",
+  "source_commit": "0d597332049a4662daa76528c449ea96d4c26cec",
+  "source_dirty": false,
+  "source_worktree_dirty": true,
+  "source_repository": "private source checkout (URL intentionally omitted)",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "source_path": ".gitattributes",
+      "size": 45,
+      "sha256": "0c80858b722830a2ec5fab670e29f9378fc6a62d6a3d520b099534e2b24d61ff",
+      "source_sha256": "0c80858b722830a2ec5fab670e29f9378fc6a62d6a3d520b099534e2b24d61ff"
+    },
+    {
+      "path": ".gitignore",
+      "source_path": ".gitignore",
+      "size": 405,
+      "sha256": "0d953de2d8347b24077a56f498ef49983d6447f76eb46b88e6cbcc62486b71b1",
+      "source_sha256": "0d953de2d8347b24077a56f498ef49983d6447f76eb46b88e6cbcc62486b71b1"
+    },
+    {
+      "path": ".nojekyll",
+      "source_path": "generated:github-pages",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transform": "generated-github-pages"
+    },
+    {
+      "path": "README.md",
+      "source_path": "README.md",
+      "size": 6673,
+      "sha256": "7c60c669e56e6724acaa9421bc9f36dc53e31065b5b9941a402ba7ea091268d3",
+      "source_sha256": "7c60c669e56e6724acaa9421bc9f36dc53e31065b5b9941a402ba7ea091268d3"
+    },
+    {
+      "path": "artifacts/models/kotonoha-aoi.zip",
+      "source_path": "validated-model-package",
+      "size": 6646791,
+      "sha256": "9c9ef1cb1a310630395faa58b2640de4ff2a8fde914f66bed4ad2255f2010611",
+      "source_sha256": "9c9ef1cb1a310630395faa58b2640de4ff2a8fde914f66bed4ad2255f2010611"
+    },
+    {
+      "path": "artifacts/runtime/FIRST_PARTY_NOTICE.md",
+      "source_path": "runtime-package:FIRST_PARTY_NOTICE.md",
+      "size": 476,
+      "sha256": "5074ee6afbaab6afece0419d3ebdadd867b567631420bb1685a42b2e42ce2309",
+      "source_sha256": "5074ee6afbaab6afece0419d3ebdadd867b567631420bb1685a42b2e42ce2309"
+    },
+    {
+      "path": "artifacts/runtime/README.md",
+      "source_path": "runtime-package:README.md",
+      "size": 17282,
+      "sha256": "dc1dc080735354b9d54d5e2f9bbc850de80e023fca910c89cade4ede157d6a3a",
+      "source_sha256": "dc1dc080735354b9d54d5e2f9bbc850de80e023fca910c89cade4ede157d6a3a"
+    },
+    {
+      "path": "artifacts/runtime/index.d.ts",
+      "source_path": "runtime-package:index.d.ts",
+      "size": 6776,
+      "sha256": "ac0bd473494fc0abd59f40210e728de105bca4a09d3606fae812205b6cc925d8",
+      "source_sha256": "ac0bd473494fc0abd59f40210e728de105bca4a09d3606fae812205b6cc925d8"
+    },
+    {
+      "path": "artifacts/runtime/index.js",
+      "source_path": "runtime-package:index.js",
+      "size": 43,
+      "sha256": "82ad7eccdb73721684f56b2613250091486a69951ca76ad955e72d1e8eabf1c3",
+      "source_sha256": "82ad7eccdb73721684f56b2613250091486a69951ca76ad955e72d1e8eabf1c3"
+    },
+    {
+      "path": "artifacts/runtime/package.json",
+      "source_path": "runtime-package:package.json",
+      "size": 540,
+      "sha256": "b1da76c3faa1d10fedafb920a297d494e5a81a122e67f87eeda0005c30d0ee9f",
+      "source_sha256": "b1da76c3faa1d10fedafb920a297d494e5a81a122e67f87eeda0005c30d0ee9f"
+    },
+    {
+      "path": "artifacts/runtime/runtime-provenance.json",
+      "source_path": "runtime-package:runtime-provenance.json",
+      "size": 7743,
+      "sha256": "dca441b5d0cff54b787fe4ba4216ff697ffe2dc367a0562c01ebd2433610881e",
+      "source_sha256": "dca441b5d0cff54b787fe4ba4216ff697ffe2dc367a0562c01ebd2433610881e"
+    },
+    {
+      "path": "artifacts/runtime/web/js/core/deform.js",
+      "source_path": "runtime-package:web/js/core/deform.js",
+      "size": 22364,
+      "sha256": "82d267fdffeaf5b5ea37451742da0d1506ad25c3c5f4a44bb103daafdb5a2b00",
+      "source_sha256": "82d267fdffeaf5b5ea37451742da0d1506ad25c3c5f4a44bb103daafdb5a2b00"
+    },
+    {
+      "path": "artifacts/runtime/web/js/core/model.js",
+      "source_path": "runtime-package:web/js/core/model.js",
+      "size": 10820,
+      "sha256": "ed9144566d1097d4779cd29c68993b42bf13c9a6da2e8692cd36fd8c1985ba1e",
+      "source_sha256": "ed9144566d1097d4779cd29c68993b42bf13c9a6da2e8692cd36fd8c1985ba1e"
+    },
+    {
+      "path": "artifacts/runtime/web/js/core/motion.js",
+      "source_path": "runtime-package:web/js/core/motion.js",
+      "size": 18657,
+      "sha256": "b1e8ee7a2c8b152721d25ef346a44dd1769f2dc684680c3439e51cffc9e3cef2",
+      "source_sha256": "b1e8ee7a2c8b152721d25ef346a44dd1769f2dc684680c3439e51cffc9e3cef2"
+    },
+    {
+      "path": "artifacts/runtime/web/js/core/params.js",
+      "source_path": "runtime-package:web/js/core/params.js",
+      "size": 2717,
+      "sha256": "d7d7fed2d5adf4928e6802157a73e1db6209a53b958653a4aef2ec5eddb3850a",
+      "source_sha256": "d7d7fed2d5adf4928e6802157a73e1db6209a53b958653a4aef2ec5eddb3850a"
+    },
+    {
+      "path": "artifacts/runtime/web/js/core/physics.js",
+      "source_path": "runtime-package:web/js/core/physics.js",
+      "size": 10697,
+      "sha256": "d4cf04504bd4fc298dcacf0a9f6dbef6ab524df6a6d59eba19922346e9648446",
+      "source_sha256": "d4cf04504bd4fc298dcacf0a9f6dbef6ab524df6a6d59eba19922346e9648446"
+    },
+    {
+      "path": "artifacts/runtime/web/js/core/puppet.js",
+      "source_path": "runtime-package:web/js/core/puppet.js",
+      "size": 557,
+      "sha256": "a9994147eccc906171f7f76a9544e1efb1cda6d5e9d0fa5ed4cde28e620ee276",
+      "source_sha256": "a9994147eccc906171f7f76a9544e1efb1cda6d5e9d0fa5ed4cde28e620ee276"
+    },
+    {
+      "path": "artifacts/runtime/web/js/core/renderer.js",
+      "source_path": "runtime-package:web/js/core/renderer.js",
+      "size": 15803,
+      "sha256": "2f90785b12a5aae395af77fc7558b9b1276a0cc0437d5fa51535b13d12239992",
+      "source_sha256": "2f90785b12a5aae395af77fc7558b9b1276a0cc0437d5fa51535b13d12239992"
+    },
+    {
+      "path": "artifacts/runtime/web/js/runtime-baseline/deform.js",
+      "source_path": "runtime-package:web/js/runtime-baseline/deform.js",
+      "size": 18075,
+      "sha256": "73fc1b93fa64316319a8fa76d2e93ac0123947f1115dbfb7cd6ebd268fdaf2f1",
+      "source_sha256": "73fc1b93fa64316319a8fa76d2e93ac0123947f1115dbfb7cd6ebd268fdaf2f1"
+    },
+    {
+      "path": "artifacts/runtime/web/js/runtime-baseline/motion.js",
+      "source_path": "runtime-package:web/js/runtime-baseline/motion.js",
+      "size": 13192,
+      "sha256": "50689c065cf22ade614934aad449c2fd26702411450668dc6964129e288458a0",
+      "source_sha256": "50689c065cf22ade614934aad449c2fd26702411450668dc6964129e288458a0"
+    },
+    {
+      "path": "artifacts/runtime/web/js/runtime-baseline/params.js",
+      "source_path": "runtime-package:web/js/runtime-baseline/params.js",
+      "size": 2440,
+      "sha256": "47f16986a1343cc44d4b8beb7a93e29a2aefbfe8a472bc46287fa857d2adf443",
+      "source_sha256": "47f16986a1343cc44d4b8beb7a93e29a2aefbfe8a472bc46287fa857d2adf443"
+    },
+    {
+      "path": "artifacts/runtime/web/js/runtime-baseline/physics.js",
+      "source_path": "runtime-package:web/js/runtime-baseline/physics.js",
+      "size": 9531,
+      "sha256": "523c971973acf34d2aa00facd27b74c45955d3de8af5e3540036469753df5b2a",
+      "source_sha256": "523c971973acf34d2aa00facd27b74c45955d3de8af5e3540036469753df5b2a"
+    },
+    {
+      "path": "artifacts/runtime/web/js/runtime/engine.js",
+      "source_path": "runtime-package:web/js/runtime/engine.js",
+      "size": 276,
+      "sha256": "6c3e2ee7389e245aae1b1ee1c877fc676b129380a25320c2ced88d082f5a6913",
+      "source_sha256": "6c3e2ee7389e245aae1b1ee1c877fc676b129380a25320c2ced88d082f5a6913"
+    },
+    {
+      "path": "artifacts/runtime/web/js/runtime/host.js",
+      "source_path": "runtime-package:web/js/runtime/host.js",
+      "size": 20997,
+      "sha256": "6de93023984e7eadced400e71fc62b08883b5401c49524c9ee27dbf63373a3ba",
+      "source_sha256": "6de93023984e7eadced400e71fc62b08883b5401c49524c9ee27dbf63373a3ba"
+    },
+    {
+      "path": "artifacts/runtime/web/js/runtime/index.d.ts",
+      "source_path": "runtime-package:web/js/runtime/index.d.ts",
+      "size": 6776,
+      "sha256": "ac0bd473494fc0abd59f40210e728de105bca4a09d3606fae812205b6cc925d8",
+      "source_sha256": "ac0bd473494fc0abd59f40210e728de105bca4a09d3606fae812205b6cc925d8"
+    },
+    {
+      "path": "artifacts/runtime/web/js/runtime/index.js",
+      "source_path": "runtime-package:web/js/runtime/index.js",
+      "size": 1353,
+      "sha256": "2513d48a18f30c6944b0c686fcd2c34e5a725efe1f9e23ba351d75de3148185b",
+      "source_sha256": "2513d48a18f30c6944b0c686fcd2c34e5a725efe1f9e23ba351d75de3148185b"
+    },
+    {
+      "path": "artifacts/runtime/web/js/runtime/playback-settings-panel.js",
+      "source_path": "runtime-package:web/js/runtime/playback-settings-panel.js",
+      "size": 9537,
+      "sha256": "41d3e58519367749b36d982f8bd6884a756cefe86305c9f9f0f9894466249665",
+      "source_sha256": "41d3e58519367749b36d982f8bd6884a756cefe86305c9f9f0f9894466249665"
+    },
+    {
+      "path": "artifacts/runtime/web/js/runtime/playback-settings-schema.js",
+      "source_path": "runtime-package:web/js/runtime/playback-settings-schema.js",
+      "size": 9513,
+      "sha256": "ab0f5c4ad74b04f1ba8e192f138fceb768c4a1447dc981f171d21b6c24972a20",
+      "source_sha256": "ab0f5c4ad74b04f1ba8e192f138fceb768c4a1447dc981f171d21b6c24972a20"
+    },
+    {
+      "path": "artifacts/runtime/web/js/runtime/playback-settings.js",
+      "source_path": "runtime-package:web/js/runtime/playback-settings.js",
+      "size": 6608,
+      "sha256": "ff3bd070d4a0eee95a9c26f4b5edaea60b948ae8b7fa00e730aaee0e6b340ed7",
+      "source_sha256": "ff3bd070d4a0eee95a9c26f4b5edaea60b948ae8b7fa00e730aaee0e6b340ed7"
+    },
+    {
+      "path": "artifacts/runtime/web/js/runtime/playback-settings.schema.json",
+      "source_path": "runtime-package:web/js/runtime/playback-settings.schema.json",
+      "size": 9395,
+      "sha256": "af981a2120d7dff626c51427d8e712fdd6bdc468f76fe0f7e0be78be0c75bffc",
+      "source_sha256": "af981a2120d7dff626c51427d8e712fdd6bdc468f76fe0f7e0be78be0c75bffc"
+    },
+    {
+      "path": "docs/CANDIDATES.md",
+      "source_path": "docs/CANDIDATES.md",
+      "size": 3063,
+      "sha256": "f88465f4c9be74f4a38b24e06fbfe02d812f50fbf13a8bd49b081dcf55c97219",
+      "source_sha256": "f88465f4c9be74f4a38b24e06fbfe02d812f50fbf13a8bd49b081dcf55c97219"
+    },
+    {
+      "path": "docs/RESEARCH.md",
+      "source_path": "docs/RESEARCH.md",
+      "size": 6433,
+      "sha256": "ef5a8a1c5f2a9fb482e962e71f72672de190b7bd9bc1205589788c8816131797",
+      "source_sha256": "ef5a8a1c5f2a9fb482e962e71f72672de190b7bd9bc1205589788c8816131797"
+    },
+    {
+      "path": "docs/face-keys-release.md",
+      "source_path": "docs/face-keys-release.md",
+      "size": 3457,
+      "sha256": "090342f1e14b53cd0d530400e93c949f93a2f12febbdd113279637c0bb13c01e",
+      "source_sha256": "0f00b6257726b8bdaca9033aeb35f4d590414f31344fc6026fc5d3ebd5cdcb01",
+      "transform": "public-redaction-v1"
+    },
+    {
+      "path": "docs/media/aoi-showcase.jpg",
+      "source_path": "docs/media/aoi-showcase.jpg",
+      "size": 208726,
+      "sha256": "4513a9a5d7e9bf339e939482bac8c63c736d7b67a968275e16efa4937169f97e",
+      "source_sha256": "4513a9a5d7e9bf339e939482bac8c63c736d7b67a968275e16efa4937169f97e"
+    },
+    {
+      "path": "docs/media/aoi-showcase.mp4",
+      "source_path": "docs/media/aoi-showcase.mp4",
+      "size": 13476221,
+      "sha256": "eace4f34d363acbdd8ed23f515425d349d008cf6cd442b21d4ee9dac142e191f",
+      "source_sha256": "eace4f34d363acbdd8ed23f515425d349d008cf6cd442b21d4ee9dac142e191f"
+    },
+    {
+      "path": "docs/production-integration.md",
+      "source_path": "docs/production-integration.md",
+      "size": 10560,
+      "sha256": "38414a374d002f0fc7b4167b66d4b6c9444a01c04025c14c48f4dad71b526607",
+      "source_sha256": "38414a374d002f0fc7b4167b66d4b6c9444a01c04025c14c48f4dad71b526607"
+    },
+    {
+      "path": "docs/publication.md",
+      "source_path": "docs/publication.md",
+      "size": 4494,
+      "sha256": "48de680100918fca6b19e880b4f54182061ac6d377f1f21b9d4336a98fe2b5e8",
+      "source_sha256": "48de680100918fca6b19e880b4f54182061ac6d377f1f21b9d4336a98fe2b5e8"
+    },
+    {
+      "path": "docs/runtime.md",
+      "source_path": "docs/runtime.md",
+      "size": 17309,
+      "sha256": "2874ec64c031e6286546d71bb91c83ea1bde62924a0274c8579497098f8c0bce",
+      "source_sha256": "dc1dc080735354b9d54d5e2f9bbc850de80e023fca910c89cade4ede157d6a3a",
+      "transform": "public-redaction-v1"
+    },
+    {
+      "path": "docs/technical-guide.md",
+      "source_path": "docs/technical-guide.md",
+      "size": 18971,
+      "sha256": "1618def1162a66ab5250353a1950140f7e083ee69c4890505eabe9c1b32a6841",
+      "source_sha256": "50c0fb9c8691cf69232bac272142dc8f243f395c301e88b72e38a51ab0e8834f",
+      "transform": "public-redaction-v1"
+    },
+    {
+      "path": "package.json",
+      "source_path": "package.json",
+      "size": 81,
+      "sha256": "5192143957108c2c31a4dec02fefcc61ede76f76447005e99eaac11acc72f3da",
+      "source_sha256": "5192143957108c2c31a4dec02fefcc61ede76f76447005e99eaac11acc72f3da"
+    },
+    {
+      "path": "pyproject.toml",
+      "source_path": "pyproject.toml",
+      "size": 545,
+      "sha256": "84c2eac43566d26e475c1509c568b6971a1c75316cf93992368c1af8fb9751d6",
+      "source_sha256": "84c2eac43566d26e475c1509c568b6971a1c75316cf93992368c1af8fb9751d6"
+    },
+    {
+      "path": "recipes/aoi.json",
+      "source_path": "recipes/aoi.json",
+      "size": 8205,
+      "sha256": "9efe9019919d931c4085b313b404167a5bb5fab682a717ad9c954dacebefc74e",
+      "source_sha256": "9efe9019919d931c4085b313b404167a5bb5fab682a717ad9c954dacebefc74e"
+    },
+    {
+      "path": "recipes/aoi_rig.json",
+      "source_path": "recipes/aoi_rig.json",
+      "size": 7365,
+      "sha256": "0cc63f1e96711da77ad96357a7d4b193762e60260ad07099324a3149ad12d58a",
+      "source_sha256": "0cc63f1e96711da77ad96357a7d4b193762e60260ad07099324a3149ad12d58a"
+    },
+    {
+      "path": "recipes/aoi_vowels.json",
+      "source_path": "recipes/aoi_vowels.json",
+      "size": 28502,
+      "sha256": "892f68464d54655f2a7f9fdc36414e0687df82e7a80e2e4432a50c84dd3d94ed",
+      "source_sha256": "892f68464d54655f2a7f9fdc36414e0687df82e7a80e2e4432a50c84dd3d94ed"
+    },
+    {
+      "path": "scripts/check_sheet.py",
+      "source_path": "scripts/check_sheet.py",
+      "size": 2028,
+      "sha256": "c1934ec89c0eab5ba35ac1873766a0ea0ab6166ffbcd430d2c941da0b599ea95",
+      "source_sha256": "c1934ec89c0eab5ba35ac1873766a0ea0ab6166ffbcd430d2c941da0b599ea95"
+    },
+    {
+      "path": "scripts/generate_playback_schema.py",
+      "source_path": "scripts/generate_playback_schema.py",
+      "size": 621,
+      "sha256": "9985f4f44a534ceb3390d7f6d57f354778602d62a4345abff2de03c5fd0e6cab",
+      "source_sha256": "9985f4f44a534ceb3390d7f6d57f354778602d62a4345abff2de03c5fd0e6cab"
+    },
+    {
+      "path": "scripts/package_runtime.py",
+      "source_path": "scripts/package_runtime.py",
+      "size": 7425,
+      "sha256": "bb3fa3abfc1d5206c8c8889ef1e1b36e36682ed2a39c929503737f5ba6a3452e",
+      "source_sha256": "bb3fa3abfc1d5206c8c8889ef1e1b36e36682ed2a39c929503737f5ba6a3452e"
+    },
+    {
+      "path": "scripts/pose_sheet.py",
+      "source_path": "scripts/pose_sheet.py",
+      "size": 4436,
+      "sha256": "126e595b69dabd4b1d92ee8300099a93f97ecb39594c38859e32129bd644519c",
+      "source_sha256": "126e595b69dabd4b1d92ee8300099a93f97ecb39594c38859e32129bd644519c"
+    },
+    {
+      "path": "scripts/record.py",
+      "source_path": "scripts/record.py",
+      "size": 3162,
+      "sha256": "c6e7a588b62b14a212f98764d28dfc572dadfbfccc602c2bd80a2865f90c264c",
+      "source_sha256": "c6e7a588b62b14a212f98764d28dfc572dadfbfccc602c2bd80a2865f90c264c"
+    },
+    {
+      "path": "scripts/record_editor.py",
+      "source_path": "scripts/record_editor.py",
+      "size": 3659,
+      "sha256": "84b22cfd5b61ea7459209224a888dbfe281ba517cb1e9c127baed9b42ffd77dc",
+      "source_sha256": "84b22cfd5b61ea7459209224a888dbfe281ba517cb1e9c127baed9b42ffd77dc"
+    },
+    {
+      "path": "scripts/record_showcase.py",
+      "source_path": "scripts/record_showcase.py",
+      "size": 15168,
+      "sha256": "16deeac4858aaff491ac56ecb0cdbb6a1a14904b7f8bc6239297ecab9125532e",
+      "source_sha256": "16deeac4858aaff491ac56ecb0cdbb6a1a14904b7f8bc6239297ecab9125532e"
+    },
+    {
+      "path": "scripts/register_face_keys.py",
+      "source_path": "scripts/register_face_keys.py",
+      "size": 1669,
+      "sha256": "c83f8690805ced67d91633796df9e0960987739126977bea2e870f73a9e46d90",
+      "source_sha256": "c83f8690805ced67d91633796df9e0960987739126977bea2e870f73a9e46d90"
+    },
+    {
+      "path": "scripts/rigid_check.py",
+      "source_path": "scripts/rigid_check.py",
+      "size": 9376,
+      "sha256": "675f99d430d58932f7b140ea22e2d34a09a797f32b199ab9c80a50b88dd7a231",
+      "source_sha256": "675f99d430d58932f7b140ea22e2d34a09a797f32b199ab9c80a50b88dd7a231"
+    },
+    {
+      "path": "scripts/sync_public.py",
+      "source_path": "scripts/sync_public.py",
+      "size": 33493,
+      "sha256": "f0f1d74677f2803ca480cf9677cdf5535317cca9cbfb1b5e811c326e8b265512",
+      "source_sha256": "f0f1d74677f2803ca480cf9677cdf5535317cca9cbfb1b5e811c326e8b265512"
+    },
+    {
+      "path": "scripts/warp_check.py",
+      "source_path": "scripts/warp_check.py",
+      "size": 8373,
+      "sha256": "e31423aaf311463049d1993b074a5a655f621773ca2bba6e3a649a2579802413",
+      "source_sha256": "e31423aaf311463049d1993b074a5a655f621773ca2bba6e3a649a2579802413"
+    },
+    {
+      "path": "seethrough_rig/__init__.py",
+      "source_path": "seethrough_rig/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "seethrough_rig/build.py",
+      "source_path": "seethrough_rig/build.py",
+      "size": 79128,
+      "sha256": "fbf5c579bfabb075b6fc57c796fa5448cf650f127332786fc6ccac02ccd78128",
+      "source_sha256": "fbf5c579bfabb075b6fc57c796fa5448cf650f127332786fc6ccac02ccd78128"
+    },
+    {
+      "path": "seethrough_rig/cli.py",
+      "source_path": "seethrough_rig/cli.py",
+      "size": 2606,
+      "sha256": "ed3aef7c54bb7762cecb1fd4127715b2720edb7a8f94eda2810b725b81fad4f5",
+      "source_sha256": "ed3aef7c54bb7762cecb1fd4127715b2720edb7a8f94eda2810b725b81fad4f5"
+    },
+    {
+      "path": "seethrough_rig/config.py",
+      "source_path": "seethrough_rig/config.py",
+      "size": 1778,
+      "sha256": "9c1bbf611aed6f2a7ffcc348fbe24759ce7429c5daa46230901e431f32478992",
+      "source_sha256": "9c1bbf611aed6f2a7ffcc348fbe24759ce7429c5daa46230901e431f32478992"
+    },
+    {
+      "path": "seethrough_rig/decompose.py",
+      "source_path": "seethrough_rig/decompose.py",
+      "size": 6522,
+      "sha256": "642cf537b5e80645ade2c0eb00e59e98df9fb643de09d0b0157bba14a2fe200c",
+      "source_sha256": "642cf537b5e80645ade2c0eb00e59e98df9fb643de09d0b0157bba14a2fe200c"
+    },
+    {
+      "path": "seethrough_rig/expressions.py",
+      "source_path": "seethrough_rig/expressions.py",
+      "size": 7047,
+      "sha256": "a912c73f8ccd215562b2bb92842a051fdc7d7e6201323e974f2a503f47787961",
+      "source_sha256": "a912c73f8ccd215562b2bb92842a051fdc7d7e6201323e974f2a503f47787961"
+    },
+    {
+      "path": "seethrough_rig/face_keys.py",
+      "source_path": "seethrough_rig/face_keys.py",
+      "size": 2433,
+      "sha256": "dc82ef70c097532a1522e046ebff8822ba3cf6665d451a5cc9c0650d18587674",
+      "source_sha256": "dc82ef70c097532a1522e046ebff8822ba3cf6665d451a5cc9c0650d18587674"
+    },
+    {
+      "path": "seethrough_rig/fitkeys_torch.py",
+      "source_path": "seethrough_rig/fitkeys_torch.py",
+      "size": 14881,
+      "sha256": "e3e9336ef89794e0bb8bebf0f8032db9a465229b74745b31d0d5a0d2dd76f368",
+      "source_sha256": "e3e9336ef89794e0bb8bebf0f8032db9a465229b74745b31d0d5a0d2dd76f368"
+    },
+    {
+      "path": "seethrough_rig/genkeys.py",
+      "source_path": "seethrough_rig/genkeys.py",
+      "size": 7112,
+      "sha256": "f3be95b97a1505f0cccdee49f354ca65817b652a932270e42fa0285f0815fdb5",
+      "source_sha256": "f3be95b97a1505f0cccdee49f354ca65817b652a932270e42fa0285f0815fdb5"
+    },
+    {
+      "path": "seethrough_rig/integration.py",
+      "source_path": "seethrough_rig/integration.py",
+      "size": 7118,
+      "sha256": "df451adbb1cbb7ff705ad778de9b765eafd18446e4a5fbdaa4d3b1d38903210b",
+      "source_sha256": "df451adbb1cbb7ff705ad778de9b765eafd18446e4a5fbdaa4d3b1d38903210b"
+    },
+    {
+      "path": "seethrough_rig/keyforms.py",
+      "source_path": "seethrough_rig/keyforms.py",
+      "size": 27960,
+      "sha256": "3c04f495097c90aa9ccc9c837a33db166215263b5a52a28e49b5867b6e3743d8",
+      "source_sha256": "3c04f495097c90aa9ccc9c837a33db166215263b5a52a28e49b5867b6e3743d8"
+    },
+    {
+      "path": "seethrough_rig/layers.py",
+      "source_path": "seethrough_rig/layers.py",
+      "size": 7271,
+      "sha256": "157881eb2b31013c99a7d43165625da489a3403ef72248d41fc7eefdc144793f",
+      "source_sha256": "157881eb2b31013c99a7d43165625da489a3403ef72248d41fc7eefdc144793f"
+    },
+    {
+      "path": "seethrough_rig/mesh.py",
+      "source_path": "seethrough_rig/mesh.py",
+      "size": 2222,
+      "sha256": "3fe464bebcaa55ef92e114f4483d74fbae65dd3b32f07f5f7e0896a7c8d25d94",
+      "source_sha256": "3fe464bebcaa55ef92e114f4483d74fbae65dd3b32f07f5f7e0896a7c8d25d94"
+    },
+    {
+      "path": "seethrough_rig/package_validate.py",
+      "source_path": "seethrough_rig/package_validate.py",
+      "size": 26056,
+      "sha256": "b133821a3b1dae2a4f47c2eda5d367469991ba8f3df165eeba960b1075d7fbbb",
+      "source_sha256": "b133821a3b1dae2a4f47c2eda5d367469991ba8f3df165eeba960b1075d7fbbb"
+    },
+    {
+      "path": "seethrough_rig/playback_settings.py",
+      "source_path": "seethrough_rig/playback_settings.py",
+      "size": 4653,
+      "sha256": "6bac7fc005162fb945ed4b0d9527ecc0f3a7db3b220bcdcb3fb1e05f17d5e97e",
+      "source_sha256": "6bac7fc005162fb945ed4b0d9527ecc0f3a7db3b220bcdcb3fb1e05f17d5e97e"
+    },
+    {
+      "path": "seethrough_rig/production_editor.py",
+      "source_path": "seethrough_rig/production_editor.py",
+      "size": 3852,
+      "sha256": "ca4a928368e3ea35d4bcfffc57554283096cbb3b2a9dfba50b107d8649815d06",
+      "source_sha256": "ca4a928368e3ea35d4bcfffc57554283096cbb3b2a9dfba50b107d8649815d06"
+    },
+    {
+      "path": "seethrough_rig/production_environment.py",
+      "source_path": "seethrough_rig/production_environment.py",
+      "size": 6761,
+      "sha256": "62dc26058520a110e81dcd343a72ea8d696c74ebfa78df2478fe97044277effa",
+      "source_sha256": "62dc26058520a110e81dcd343a72ea8d696c74ebfa78df2478fe97044277effa"
+    },
+    {
+      "path": "seethrough_rig/production_export.py",
+      "source_path": "seethrough_rig/production_export.py",
+      "size": 10735,
+      "sha256": "83614c481dce4ccc685ecbd05d856a72526efab0394c00bea76d23aff94e6a5a",
+      "source_sha256": "83614c481dce4ccc685ecbd05d856a72526efab0394c00bea76d23aff94e6a5a"
+    },
+    {
+      "path": "seethrough_rig/production_io.py",
+      "source_path": "seethrough_rig/production_io.py",
+      "size": 6459,
+      "sha256": "b42f358d622edca3ad8ad8b7d755c136fa7120f6ccc5eef21c1d43b5003081d4",
+      "source_sha256": "b42f358d622edca3ad8ad8b7d755c136fa7120f6ccc5eef21c1d43b5003081d4"
+    },
+    {
+      "path": "seethrough_rig/production_projects.py",
+      "source_path": "seethrough_rig/production_projects.py",
+      "size": 26420,
+      "sha256": "a44f0ce6745dacdccd3df46bef22ba17006e9ee8bf7248110dfec5cf398ca8ae",
+      "source_sha256": "a44f0ce6745dacdccd3df46bef22ba17006e9ee8bf7248110dfec5cf398ca8ae"
+    },
+    {
+      "path": "seethrough_rig/server.py",
+      "source_path": "seethrough_rig/server.py",
+      "size": 3138,
+      "sha256": "3aa93235a4da95bc018c6f52080093d2e53c948419f0ea7d942b2d59177ef972",
+      "source_sha256": "3aa93235a4da95bc018c6f52080093d2e53c948419f0ea7d942b2d59177ef972"
+    },
+    {
+      "path": "showcase.html",
+      "source_path": "showcase.html",
+      "size": 2976,
+      "sha256": "412674daa75e4143f8e0b8c30b025005f705ffd6b9874735b6d4af09290dcf30",
+      "source_sha256": "412674daa75e4143f8e0b8c30b025005f705ffd6b9874735b6d4af09290dcf30"
+    },
+    {
+      "path": "tests/js/editor.test.mjs",
+      "source_path": "tests/js/editor.test.mjs",
+      "size": 4983,
+      "sha256": "8b1617f24336601a69aa4cf11efdded684e1dfe69cfa5582c7f2a9a6fe6f65c9",
+      "source_sha256": "8b1617f24336601a69aa4cf11efdded684e1dfe69cfa5582c7f2a9a6fe6f65c9"
+    },
+    {
+      "path": "tests/js/face-keys-model.test.mjs",
+      "source_path": "tests/js/face-keys-model.test.mjs",
+      "size": 1990,
+      "sha256": "d14f3b41d9e64bca826ac2585414226ed83e52874d5f062c1c0d7755bcc99ad3",
+      "source_sha256": "d14f3b41d9e64bca826ac2585414226ed83e52874d5f062c1c0d7755bcc99ad3"
+    },
+    {
+      "path": "tests/js/metrics.test.mjs",
+      "source_path": "tests/js/metrics.test.mjs",
+      "size": 1727,
+      "sha256": "7e491e5ad294201b22a2bdccbd4f57eb5f2999b7dd8efbd79dac830cad0ab5a1",
+      "source_sha256": "7e491e5ad294201b22a2bdccbd4f57eb5f2999b7dd8efbd79dac830cad0ab5a1"
+    },
+    {
+      "path": "tests/js/playback-panel.test.mjs",
+      "source_path": "tests/js/playback-panel.test.mjs",
+      "size": 10601,
+      "sha256": "ad5c4899578359c838c34955431c6a3c7053e3b03e5f7e323fa5b6cdd1ffff77",
+      "source_sha256": "ad5c4899578359c838c34955431c6a3c7053e3b03e5f7e323fa5b6cdd1ffff77"
+    },
+    {
+      "path": "tests/js/renderer-alpha.test.mjs",
+      "source_path": "tests/js/renderer-alpha.test.mjs",
+      "size": 6873,
+      "sha256": "8833dd5de69b05fd1b227d7d93145e20fc5bddf26b860e93948891cb3eb380d3",
+      "source_sha256": "8833dd5de69b05fd1b227d7d93145e20fc5bddf26b860e93948891cb3eb380d3"
+    },
+    {
+      "path": "tests/js/rig.test.mjs",
+      "source_path": "tests/js/rig.test.mjs",
+      "size": 5614,
+      "sha256": "ea4640306334d987d30706010ee62abc4f0bc90f015583ed3b139d56022741f5",
+      "source_sha256": "ea4640306334d987d30706010ee62abc4f0bc90f015583ed3b139d56022741f5"
+    },
+    {
+      "path": "tests/js/runtime-package.mjs",
+      "source_path": "tests/js/runtime-package.mjs",
+      "size": 2897,
+      "sha256": "f762c153ea795e38b82bea7450f9c10626676090adc8de1d4e3c8f2474d94f83",
+      "source_sha256": "f762c153ea795e38b82bea7450f9c10626676090adc8de1d4e3c8f2474d94f83"
+    },
+    {
+      "path": "tests/js/runtime-playback.test.mjs",
+      "source_path": "tests/js/runtime-playback.test.mjs",
+      "size": 12593,
+      "sha256": "66134af3ea35e22b7f132d4b26d30acfa1130eef816c36d6a77d985751f8f5d8",
+      "source_sha256": "66134af3ea35e22b7f132d4b26d30acfa1130eef816c36d6a77d985751f8f5d8"
+    },
+    {
+      "path": "tests/js/runtime.test.mjs",
+      "source_path": "tests/js/runtime.test.mjs",
+      "size": 23222,
+      "sha256": "817b3f1061cfbd0a5388586b4700f872936fcd542d6d845f06cee3ff0d61ba6e",
+      "source_sha256": "817b3f1061cfbd0a5388586b4700f872936fcd542d6d845f06cee3ff0d61ba6e"
+    },
+    {
+      "path": "tests/test_editor_core_identity.py",
+      "source_path": "tests/test_editor_core_identity.py",
+      "size": 7517,
+      "sha256": "2b539128111d45c89e75b6fe148c2cb861f6b83d939b606186dfdbba5ae322a1",
+      "source_sha256": "2b539128111d45c89e75b6fe148c2cb861f6b83d939b606186dfdbba5ae322a1"
+    },
+    {
+      "path": "tests/test_face_keys.py",
+      "source_path": "tests/test_face_keys.py",
+      "size": 3994,
+      "sha256": "636acbbc72028a4f4f8854fd25f557eec4ea149e354388286c7bd17a6d679d25",
+      "source_sha256": "636acbbc72028a4f4f8854fd25f557eec4ea149e354388286c7bd17a6d679d25"
+    },
+    {
+      "path": "tests/test_integration_package.py",
+      "source_path": "tests/test_integration_package.py",
+      "size": 15458,
+      "sha256": "28a10b6e7e747a39f5d29691ad32309540619d83aa12ba95b31eae66fb16abb0",
+      "source_sha256": "28a10b6e7e747a39f5d29691ad32309540619d83aa12ba95b31eae66fb16abb0"
+    },
+    {
+      "path": "tests/test_integration_projects.py",
+      "source_path": "tests/test_integration_projects.py",
+      "size": 16368,
+      "sha256": "bf428db7801169cac9b63c3fda996a49a6eaca839e667ab811a968a88305f6e3",
+      "source_sha256": "bf428db7801169cac9b63c3fda996a49a6eaca839e667ab811a968a88305f6e3"
+    },
+    {
+      "path": "tests/test_pipeline.py",
+      "source_path": "tests/test_pipeline.py",
+      "size": 7498,
+      "sha256": "55b94a813961e99498d155550c94a4872ed8a3da30cc8d8b9a329cb44a647ffb",
+      "source_sha256": "55b94a813961e99498d155550c94a4872ed8a3da30cc8d8b9a329cb44a647ffb"
+    },
+    {
+      "path": "tests/test_playback_settings.py",
+      "source_path": "tests/test_playback_settings.py",
+      "size": 10453,
+      "sha256": "a1384116af1c6c7af1ea7f0b0f9d961ce244e7958c04f7908689ebf406f89e4c",
+      "source_sha256": "a1384116af1c6c7af1ea7f0b0f9d961ce244e7958c04f7908689ebf406f89e4c"
+    },
+    {
+      "path": "tests/test_renderer_alpha_gpu.py",
+      "source_path": "tests/test_renderer_alpha_gpu.py",
+      "size": 4371,
+      "sha256": "a1975e86c464b030a6addf30949d57ebc9fe1507d5e311676c00a9330be197df",
+      "source_sha256": "a1975e86c464b030a6addf30949d57ebc9fe1507d5e311676c00a9330be197df"
+    },
+    {
+      "path": "tests/test_restore_boundary.py",
+      "source_path": "tests/test_restore_boundary.py",
+      "size": 1414,
+      "sha256": "e431c4fda157b491dfaef467276df28adc07b69d16e86419a9eedee79eba78f2",
+      "source_sha256": "e431c4fda157b491dfaef467276df28adc07b69d16e86419a9eedee79eba78f2"
+    },
+    {
+      "path": "tests/test_runtime_integration_regressions.py",
+      "source_path": "tests/test_runtime_integration_regressions.py",
+      "size": 6232,
+      "sha256": "37ace00ee7b1a76713635766cafd1dbc80aec3ba92217b517cb7815b36976464",
+      "source_sha256": "37ace00ee7b1a76713635766cafd1dbc80aec3ba92217b517cb7815b36976464"
+    },
+    {
+      "path": "tests/test_runtime_packaging.py",
+      "source_path": "tests/test_runtime_packaging.py",
+      "size": 2306,
+      "sha256": "c2962588c15d77953369f6b16e63fc6df97d2401520e7674372abf75b53d644a",
+      "source_sha256": "c2962588c15d77953369f6b16e63fc6df97d2401520e7674372abf75b53d644a"
+    },
+    {
+      "path": "tests/test_sync_public.py",
+      "source_path": "tests/test_sync_public.py",
+      "size": 1362,
+      "sha256": "3d6ac38469ea6c44c6a23a503b14e47c021d8ebbf75fe6c0c89dbf9ffc68a593",
+      "source_sha256": "3d6ac38469ea6c44c6a23a503b14e47c021d8ebbf75fe6c0c89dbf9ffc68a593"
+    },
+    {
+      "path": "web/css/editor.css",
+      "source_path": "web/css/editor.css",
+      "size": 3557,
+      "sha256": "4cc4282743ce44704e54312a2c83a5633b6e6295f1c9d8133ab3103e74f9d8d2",
+      "source_sha256": "4cc4282743ce44704e54312a2c83a5633b6e6295f1c9d8133ab3103e74f9d8d2"
+    },
+    {
+      "path": "web/editor.html",
+      "source_path": "web/editor.html",
+      "size": 2589,
+      "sha256": "8953daea0f8186e4e07d57cba44186e598df740d2119424212d6a725f9dc2cc8",
+      "source_sha256": "8953daea0f8186e4e07d57cba44186e598df740d2119424212d6a725f9dc2cc8"
+    },
+    {
+      "path": "web/face-keys-review.html",
+      "source_path": "web/face-keys-review.html",
+      "size": 3626,
+      "sha256": "016d631ce79188e2511644772ac9fa9ef5702e146f9a4261caab379707886d81",
+      "source_sha256": "016d631ce79188e2511644772ac9fa9ef5702e146f9a4261caab379707886d81"
+    },
+    {
+      "path": "web/js/core/deform.js",
+      "source_path": "web/js/core/deform.js",
+      "size": 22364,
+      "sha256": "82d267fdffeaf5b5ea37451742da0d1506ad25c3c5f4a44bb103daafdb5a2b00",
+      "source_sha256": "82d267fdffeaf5b5ea37451742da0d1506ad25c3c5f4a44bb103daafdb5a2b00"
+    },
+    {
+      "path": "web/js/core/metrics.js",
+      "source_path": "web/js/core/metrics.js",
+      "size": 14030,
+      "sha256": "a5e41e96e5878c3474ab51a16f5ca7e2298f3889d9d48b045034f6d9f5cbadc1",
+      "source_sha256": "a5e41e96e5878c3474ab51a16f5ca7e2298f3889d9d48b045034f6d9f5cbadc1"
+    },
+    {
+      "path": "web/js/core/model.js",
+      "source_path": "web/js/core/model.js",
+      "size": 10820,
+      "sha256": "ed9144566d1097d4779cd29c68993b42bf13c9a6da2e8692cd36fd8c1985ba1e",
+      "source_sha256": "ed9144566d1097d4779cd29c68993b42bf13c9a6da2e8692cd36fd8c1985ba1e"
+    },
+    {
+      "path": "web/js/core/motion.js",
+      "source_path": "web/js/core/motion.js",
+      "size": 18657,
+      "sha256": "b1e8ee7a2c8b152721d25ef346a44dd1769f2dc684680c3439e51cffc9e3cef2",
+      "source_sha256": "b1e8ee7a2c8b152721d25ef346a44dd1769f2dc684680c3439e51cffc9e3cef2"
+    },
+    {
+      "path": "web/js/core/params.js",
+      "source_path": "web/js/core/params.js",
+      "size": 2717,
+      "sha256": "d7d7fed2d5adf4928e6802157a73e1db6209a53b958653a4aef2ec5eddb3850a",
+      "source_sha256": "d7d7fed2d5adf4928e6802157a73e1db6209a53b958653a4aef2ec5eddb3850a"
+    },
+    {
+      "path": "web/js/core/physics.js",
+      "source_path": "web/js/core/physics.js",
+      "size": 10697,
+      "sha256": "d4cf04504bd4fc298dcacf0a9f6dbef6ab524df6a6d59eba19922346e9648446",
+      "source_sha256": "d4cf04504bd4fc298dcacf0a9f6dbef6ab524df6a6d59eba19922346e9648446"
+    },
+    {
+      "path": "web/js/core/puppet.js",
+      "source_path": "web/js/core/puppet.js",
+      "size": 557,
+      "sha256": "a9994147eccc906171f7f76a9544e1efb1cda6d5e9d0fa5ed4cde28e620ee276",
+      "source_sha256": "a9994147eccc906171f7f76a9544e1efb1cda6d5e9d0fa5ed4cde28e620ee276"
+    },
+    {
+      "path": "web/js/core/renderer.js",
+      "source_path": "web/js/core/renderer.js",
+      "size": 15803,
+      "sha256": "2f90785b12a5aae395af77fc7558b9b1276a0cc0437d5fa51535b13d12239992",
+      "source_sha256": "2f90785b12a5aae395af77fc7558b9b1276a0cc0437d5fa51535b13d12239992"
+    },
+    {
+      "path": "web/js/editor.js",
+      "source_path": "web/js/editor.js",
+      "size": 14181,
+      "sha256": "2a238a9889107c605a56096f085bc04c008e940c24a45f603b89db3488b364ec",
+      "source_sha256": "2a238a9889107c605a56096f085bc04c008e940c24a45f603b89db3488b364ec"
+    },
+    {
+      "path": "web/js/player.js",
+      "source_path": "web/js/player.js",
+      "size": 3933,
+      "sha256": "5718bdf1ac897bd4147e81cc751ab55ad66529b2b5017ce92a683453d9262663",
+      "source_sha256": "5718bdf1ac897bd4147e81cc751ab55ad66529b2b5017ce92a683453d9262663"
+    },
+    {
+      "path": "web/js/runtime-baseline/deform.js",
+      "source_path": "web/js/runtime-baseline/deform.js",
+      "size": 18075,
+      "sha256": "73fc1b93fa64316319a8fa76d2e93ac0123947f1115dbfb7cd6ebd268fdaf2f1",
+      "source_sha256": "73fc1b93fa64316319a8fa76d2e93ac0123947f1115dbfb7cd6ebd268fdaf2f1"
+    },
+    {
+      "path": "web/js/runtime-baseline/motion.js",
+      "source_path": "web/js/runtime-baseline/motion.js",
+      "size": 13192,
+      "sha256": "50689c065cf22ade614934aad449c2fd26702411450668dc6964129e288458a0",
+      "source_sha256": "50689c065cf22ade614934aad449c2fd26702411450668dc6964129e288458a0"
+    },
+    {
+      "path": "web/js/runtime-baseline/params.js",
+      "source_path": "web/js/runtime-baseline/params.js",
+      "size": 2440,
+      "sha256": "47f16986a1343cc44d4b8beb7a93e29a2aefbfe8a472bc46287fa857d2adf443",
+      "source_sha256": "47f16986a1343cc44d4b8beb7a93e29a2aefbfe8a472bc46287fa857d2adf443"
+    },
+    {
+      "path": "web/js/runtime-baseline/physics.js",
+      "source_path": "web/js/runtime-baseline/physics.js",
+      "size": 9531,
+      "sha256": "523c971973acf34d2aa00facd27b74c45955d3de8af5e3540036469753df5b2a",
+      "source_sha256": "523c971973acf34d2aa00facd27b74c45955d3de8af5e3540036469753df5b2a"
+    },
+    {
+      "path": "web/js/runtime/engine.js",
+      "source_path": "web/js/runtime/engine.js",
+      "size": 276,
+      "sha256": "6c3e2ee7389e245aae1b1ee1c877fc676b129380a25320c2ced88d082f5a6913",
+      "source_sha256": "6c3e2ee7389e245aae1b1ee1c877fc676b129380a25320c2ced88d082f5a6913"
+    },
+    {
+      "path": "web/js/runtime/host.js",
+      "source_path": "web/js/runtime/host.js",
+      "size": 20997,
+      "sha256": "6de93023984e7eadced400e71fc62b08883b5401c49524c9ee27dbf63373a3ba",
+      "source_sha256": "6de93023984e7eadced400e71fc62b08883b5401c49524c9ee27dbf63373a3ba"
+    },
+    {
+      "path": "web/js/runtime/index.d.ts",
+      "source_path": "web/js/runtime/index.d.ts",
+      "size": 6776,
+      "sha256": "ac0bd473494fc0abd59f40210e728de105bca4a09d3606fae812205b6cc925d8",
+      "source_sha256": "ac0bd473494fc0abd59f40210e728de105bca4a09d3606fae812205b6cc925d8"
+    },
+    {
+      "path": "web/js/runtime/index.js",
+      "source_path": "web/js/runtime/index.js",
+      "size": 1353,
+      "sha256": "2513d48a18f30c6944b0c686fcd2c34e5a725efe1f9e23ba351d75de3148185b",
+      "source_sha256": "2513d48a18f30c6944b0c686fcd2c34e5a725efe1f9e23ba351d75de3148185b"
+    },
+    {
+      "path": "web/js/runtime/package.json",
+      "source_path": "web/js/runtime/package.json",
+      "size": 540,
+      "sha256": "b1da76c3faa1d10fedafb920a297d494e5a81a122e67f87eeda0005c30d0ee9f",
+      "source_sha256": "b1da76c3faa1d10fedafb920a297d494e5a81a122e67f87eeda0005c30d0ee9f"
+    },
+    {
+      "path": "web/js/runtime/playback-settings-panel.js",
+      "source_path": "web/js/runtime/playback-settings-panel.js",
+      "size": 9537,
+      "sha256": "41d3e58519367749b36d982f8bd6884a756cefe86305c9f9f0f9894466249665",
+      "source_sha256": "41d3e58519367749b36d982f8bd6884a756cefe86305c9f9f0f9894466249665"
+    },
+    {
+      "path": "web/js/runtime/playback-settings-schema.js",
+      "source_path": "web/js/runtime/playback-settings-schema.js",
+      "size": 9513,
+      "sha256": "ab0f5c4ad74b04f1ba8e192f138fceb768c4a1447dc981f171d21b6c24972a20",
+      "source_sha256": "ab0f5c4ad74b04f1ba8e192f138fceb768c4a1447dc981f171d21b6c24972a20"
+    },
+    {
+      "path": "web/js/runtime/playback-settings.js",
+      "source_path": "web/js/runtime/playback-settings.js",
+      "size": 6608,
+      "sha256": "ff3bd070d4a0eee95a9c26f4b5edaea60b948ae8b7fa00e730aaee0e6b340ed7",
+      "source_sha256": "ff3bd070d4a0eee95a9c26f4b5edaea60b948ae8b7fa00e730aaee0e6b340ed7"
+    },
+    {
+      "path": "web/js/runtime/playback-settings.schema.json",
+      "source_path": "web/js/runtime/playback-settings.schema.json",
+      "size": 9395,
+      "sha256": "af981a2120d7dff626c51427d8e712fdd6bdc468f76fe0f7e0be78be0c75bffc",
+      "source_sha256": "af981a2120d7dff626c51427d8e712fdd6bdc468f76fe0f7e0be78be0c75bffc"
+    },
+    {
+      "path": "web/js/standalone-settings.js",
+      "source_path": "web/js/standalone-settings.js",
+      "size": 783,
+      "sha256": "526cce440f43ddaf3acefeff5bde68e496936532f167d6ecee1cfdf9a3390bac",
+      "source_sha256": "526cce440f43ddaf3acefeff5bde68e496936532f167d6ecee1cfdf9a3390bac"
+    },
+    {
+      "path": "web/models/aoi/atlas_0.webp",
+      "source_path": "web/models/aoi/atlas_0.webp",
+      "size": 983520,
+      "sha256": "91136efd7ef9821942ff55558e1dae1c167013f764cf641a97d8270bde5f3d9b",
+      "source_sha256": "91136efd7ef9821942ff55558e1dae1c167013f764cf641a97d8270bde5f3d9b"
+    },
+    {
+      "path": "web/models/aoi/model.json",
+      "source_path": "web/models/aoi/model.json",
+      "size": 4013391,
+      "sha256": "4cd3a6e48e4bbf97a406eae27f3944590a525a34e266e5de6fee63ab3ceb3aab",
+      "source_sha256": "4cd3a6e48e4bbf97a406eae27f3944590a525a34e266e5de6fee63ab3ceb3aab"
+    },
+    {
+      "path": "web/motions/demo.json",
+      "source_path": "web/motions/demo.json",
+      "size": 7250,
+      "sha256": "ab165c0ab13827b50e31128069f90c4be4840fe7ee94c7574f58faed7984525c",
+      "source_sha256": "ab165c0ab13827b50e31128069f90c4be4840fe7ee94c7574f58faed7984525c"
+    },
+    {
+      "path": "web/motions/headcheck.json",
+      "source_path": "web/motions/headcheck.json",
+      "size": 739,
+      "sha256": "e571412afbe55d8fd8017249bf577d8ddb7ece750bb0e39ff67aae96a32de832",
+      "source_sha256": "e571412afbe55d8fd8017249bf577d8ddb7ece750bb0e39ff67aae96a32de832"
+    },
+    {
+      "path": "web/motions/showcase.json",
+      "source_path": "web/motions/showcase.json",
+      "size": 5950,
+      "sha256": "0baaf3511679bc30eb078e2333dd72004600bb4a670df040e533e849e231f6f8",
+      "source_sha256": "0baaf3511679bc30eb078e2333dd72004600bb4a670df040e533e849e231f6f8"
+    },
+    {
+      "path": "web/motions/wind.json",
+      "source_path": "web/motions/wind.json",
+      "size": 873,
+      "sha256": "54f1d100f6526905a7fdc8aa09bd2d3886c630bbc60dc1c60a0a0f4374358659",
+      "source_sha256": "54f1d100f6526905a7fdc8aa09bd2d3886c630bbc60dc1c60a0a0f4374358659"
+    },
+    {
+      "path": "web/player.html",
+      "source_path": "web/player.html",
+      "size": 830,
+      "sha256": "7394231cecf543f2b1dcd8798f89602dbc441fa1627938e7bca1e6be06760b1b",
+      "source_sha256": "7394231cecf543f2b1dcd8798f89602dbc441fa1627938e7bca1e6be06760b1b"
+    },
+    {
+      "path": "web/showcase.html",
+      "source_path": "web/showcase.html",
+      "size": 7109,
+      "sha256": "85898d32526df3fa0968c2349f962455a71b3616e7adc0e5d67a9329e3b4e326",
+      "source_sha256": "85898d32526df3fa0968c2349f962455a71b3616e7adc0e5d67a9329e3b4e326"
+    },
+    {
+      "path": "web/showcase.js",
+      "source_path": "web/showcase.js",
+      "size": 6428,
+      "sha256": "af5681ebffab32d9430dd04d0286b6a1931f47330cd762c3e03097e2ff3b5923",
+      "source_sha256": "af5681ebffab32d9430dd04d0286b6a1931f47330cd762c3e03097e2ff3b5923"
+    }
+  ],
+  "warnings": [],
+  "runtime_package": {
+    "path": "artifacts/runtime",
+    "file_count": 24,
+    "provenance": {
+      "package": "@aoitalk/seethrough-rig-runtime",
+      "version": "0.1.0",
+      "abi": 1,
+      "source_head": "0d597332049a4662daa76528c449ea96d4c26cec",
+      "generator_commit": "0d597332049a4662daa76528c449ea96d4c26cec",
+      "source_mode": "git",
+      "engines": [
+        {
+          "id": "canonical",
+          "source": "git",
+          "head": "0d597332049a4662daa76528c449ea96d4c26cec"
+        },
+        {
+          "id": "baseline46c",
+          "core_ref": "46c0037779fb5e59715030925d66abdc6c09ca12",
+          "source": "git"
+        }
+      ],
+      "first_party_upstream_license": "unspecified",
+      "third_party_dependencies": [],
+      "files": [
+        {
+          "path": "FIRST_PARTY_NOTICE.md",
+          "size": 476,
+          "sha256": "5074ee6afbaab6afece0419d3ebdadd867b567631420bb1685a42b2e42ce2309",
+          "source_path": "generated",
+          "source_commit": null,
+          "source": "generated"
+        },
+        {
+          "path": "README.md",
+          "size": 17282,
+          "sha256": "dc1dc080735354b9d54d5e2f9bbc850de80e023fca910c89cade4ede157d6a3a",
+          "source_path": "docs/runtime.md",
+          "source_commit": "0d597332049a4662daa76528c449ea96d4c26cec",
+          "source": "git"
+        },
+        {
+          "path": "index.d.ts",
+          "size": 6776,
+          "sha256": "ac0bd473494fc0abd59f40210e728de105bca4a09d3606fae812205b6cc925d8",
+          "source_path": "web/js/runtime/index.d.ts",
+          "source_commit": "0d597332049a4662daa76528c449ea96d4c26cec",
+          "source": "git"
+        },
+        {
+          "path": "index.js",
+          "size": 43,
+          "sha256": "82ad7eccdb73721684f56b2613250091486a69951ca76ad955e72d1e8eabf1c3",
+          "source_path": "web/js/runtime/index.js",
+          "source_commit": "0d597332049a4662daa76528c449ea96d4c26cec",
+          "source": "generated"
+        },
+        {
+          "path": "package.json",
+          "size": 540,
+          "sha256": "b1da76c3faa1d10fedafb920a297d494e5a81a122e67f87eeda0005c30d0ee9f",
+          "source_path": "web/js/runtime/package.json",
+          "source_commit": "0d597332049a4662daa76528c449ea96d4c26cec",
+          "source": "generated"
+        },
+        {
+          "path": "web/js/core/deform.js",
+          "size": 22364,
+          "sha256": "82d267fdffeaf5b5ea37451742da0d1506ad25c3c5f4a44bb103daafdb5a2b00",
+          "source_path": "web/js/core/deform.js",
+          "source_commit": "0d597332049a4662daa76528c449ea96d4c26cec",
+          "source": "git"
+        },
+        {
+          "path": "web/js/core/model.js",
+          "size": 10820,
+          "sha256": "ed9144566d1097d4779cd29c68993b42bf13c9a6da2e8692cd36fd8c1985ba1e",
+          "source_path": "web/js/core/model.js",
+          "source_commit": "0d597332049a4662daa76528c449ea96d4c26cec",
+          "source": "git"
+        },
+        {
+          "path": "web/js/core/motion.js",
+          "size": 18657,
+          "sha256": "b1e8ee7a2c8b152721d25ef346a44dd1769f2dc684680c3439e51cffc9e3cef2",
+          "source_path": "web/js/core/motion.js",
+          "source_commit": "0d597332049a4662daa76528c449ea96d4c26cec",
+          "source": "git"
+        },
+        {
+          "path": "web/js/core/params.js",
+          "size": 2717,
+          "sha256": "d7d7fed2d5adf4928e6802157a73e1db6209a53b958653a4aef2ec5eddb3850a",
+          "source_path": "web/js/core/params.js",
+          "source_commit": "0d597332049a4662daa76528c449ea96d4c26cec",
+          "source": "git"
+        },
+        {
+          "path": "web/js/core/physics.js",
+          "size": 10697,
+          "sha256": "d4cf04504bd4fc298dcacf0a9f6dbef6ab524df6a6d59eba19922346e9648446",
+          "source_path": "web/js/core/physics.js",
+          "source_commit": "0d597332049a4662daa76528c449ea96d4c26cec",
+          "source": "git"
+        },
+        {
+          "path": "web/js/core/puppet.js",
+          "size": 557,
+          "sha256": "a9994147eccc906171f7f76a9544e1efb1cda6d5e9d0fa5ed4cde28e620ee276",
+          "source_path": "web/js/core/puppet.js",
+          "source_commit": "0d597332049a4662daa76528c449ea96d4c26cec",
+          "source": "git"
+        },
+        {
+          "path": "web/js/core/renderer.js",
+          "size": 15803,
+          "sha256": "2f90785b12a5aae395af77fc7558b9b1276a0cc0437d5fa51535b13d12239992",
+          "source_path": "web/js/core/renderer.js",
+          "source_commit": "0d597332049a4662daa76528c449ea96d4c26cec",
+          "source": "git"
+        },
+        {
+          "path": "web/js/runtime-baseline/deform.js",
+          "size": 18075,
+          "sha256": "73fc1b93fa64316319a8fa76d2e93ac0123947f1115dbfb7cd6ebd268fdaf2f1",
+          "source_path": "web/js/core/deform.js",
+          "source_commit": "46c0037779fb5e59715030925d66abdc6c09ca12",
+          "source": "git"
+        },
+        {
+          "path": "web/js/runtime-baseline/motion.js",
+          "size": 13192,
+          "sha256": "50689c065cf22ade614934aad449c2fd26702411450668dc6964129e288458a0",
+          "source_path": "web/js/core/motion.js",
+          "source_commit": "46c0037779fb5e59715030925d66abdc6c09ca12",
+          "source": "git"
+        },
+        {
+          "path": "web/js/runtime-baseline/params.js",
+          "size": 2440,
+          "sha256": "47f16986a1343cc44d4b8beb7a93e29a2aefbfe8a472bc46287fa857d2adf443",
+          "source_path": "web/js/core/params.js",
+          "source_commit": "46c0037779fb5e59715030925d66abdc6c09ca12",
+          "source": "git"
+        },
+        {
+          "path": "web/js/runtime-baseline/physics.js",
+          "size": 9531,
+          "sha256": "523c971973acf34d2aa00facd27b74c45955d3de8af5e3540036469753df5b2a",
+          "source_path": "web/js/core/physics.js",
+          "source_commit": "46c0037779fb5e59715030925d66abdc6c09ca12",
+          "source": "git"
+        },
+        {
+          "path": "web/js/runtime/engine.js",
+          "size": 276,
+          "sha256": "6c3e2ee7389e245aae1b1ee1c877fc676b129380a25320c2ced88d082f5a6913",
+          "source_path": "web/js/runtime/engine.js",
+          "source_commit": "0d597332049a4662daa76528c449ea96d4c26cec",
+          "source": "git"
+        },
+        {
+          "path": "web/js/runtime/host.js",
+          "size": 20997,
+          "sha256": "6de93023984e7eadced400e71fc62b08883b5401c49524c9ee27dbf63373a3ba",
+          "source_path": "web/js/runtime/host.js",
+          "source_commit": "0d597332049a4662daa76528c449ea96d4c26cec",
+          "source": "git"
+        },
+        {
+          "path": "web/js/runtime/index.d.ts",
+          "size": 6776,
+          "sha256": "ac0bd473494fc0abd59f40210e728de105bca4a09d3606fae812205b6cc925d8",
+          "source_path": "web/js/runtime/index.d.ts",
+          "source_commit": "0d597332049a4662daa76528c449ea96d4c26cec",
+          "source": "git"
+        },
+        {
+          "path": "web/js/runtime/index.js",
+          "size": 1353,
+          "sha256": "2513d48a18f30c6944b0c686fcd2c34e5a725efe1f9e23ba351d75de3148185b",
+          "source_path": "web/js/runtime/index.js",
+          "source_commit": "0d597332049a4662daa76528c449ea96d4c26cec",
+          "source": "git"
+        },
+        {
+          "path": "web/js/runtime/playback-settings-panel.js",
+          "size": 9537,
+          "sha256": "41d3e58519367749b36d982f8bd6884a756cefe86305c9f9f0f9894466249665",
+          "source_path": "web/js/runtime/playback-settings-panel.js",
+          "source_commit": "0d597332049a4662daa76528c449ea96d4c26cec",
+          "source": "git"
+        },
+        {
+          "path": "web/js/runtime/playback-settings-schema.js",
+          "size": 9513,
+          "sha256": "ab0f5c4ad74b04f1ba8e192f138fceb768c4a1447dc981f171d21b6c24972a20",
+          "source_path": "web/js/runtime/playback-settings-schema.js",
+          "source_commit": "0d597332049a4662daa76528c449ea96d4c26cec",
+          "source": "git"
+        },
+        {
+          "path": "web/js/runtime/playback-settings.js",
+          "size": 6608,
+          "sha256": "ff3bd070d4a0eee95a9c26f4b5edaea60b948ae8b7fa00e730aaee0e6b340ed7",
+          "source_path": "web/js/runtime/playback-settings.js",
+          "source_commit": "0d597332049a4662daa76528c449ea96d4c26cec",
+          "source": "git"
+        },
+        {
+          "path": "web/js/runtime/playback-settings.schema.json",
+          "size": 9395,
+          "sha256": "af981a2120d7dff626c51427d8e712fdd6bdc468f76fe0f7e0be78be0c75bffc",
+          "source_path": "web/js/runtime/playback-settings.schema.json",
+          "source_commit": "0d597332049a4662daa76528c449ea96d4c26cec",
+          "source": "git"
+        }
+      ]
+    }
+  },
+  "model_package": {
+    "path": "artifacts/models/kotonoha-aoi.zip",
+    "sha256": "9c9ef1cb1a310630395faa58b2640de4ff2a8fde914f66bed4ad2255f2010611",
+    "source_commit": "0d597332049a4662daa76528c449ea96d4c26cec",
+    "validation": "seethrough_rig.package_validate.validate_package",
+    "capabilities": {
+      "expressions": [
+        "neutral",
+        "happy",
+        "surprised",
+        "worried",
+        "shy"
+      ],
+      "views": [
+        "full",
+        "bust",
+        "face",
+        "kf"
+      ],
+      "blink": true,
+      "mouth": true,
+      "gaze": true,
+      "physics": true,
+      "headYaw": false
+    }
+  },
+  "manifest_sha256": "62c86cecfaff8827374fd01ff3d75f5e6560635e995a841705a326e56910da4b"
+}

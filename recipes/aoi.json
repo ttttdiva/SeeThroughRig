@@ -1,0 +1,124 @@
+{
+  "name": "kotonoha-aoi",
+  "work": "../work/aoi",
+  "head_density": 2.0,
+  "atlas_size": 4096,
+  "mesh_spacing": {"face": 10, "facepart": 3, "ears": 6, "hair_front": 9, "hair_back": 14, "headwear": 12,
+                   "neck": 10, "body": 18, "arm": 18, "legs": 20},
+
+  "layers": {
+    "back hair":   {"pass": "full", "kind": "hair_back", "z": -0.2, "chains": ["hairBackL", "hairBackR"]},
+    "legwear":     {"pass": "full1024", "kind": "legs"},
+    "handwear-r":  {"pass": "full", "kind": "arm"},
+    "handwear-l":  {"pass": "full", "kind": "arm"},
+    "bottomwear":  {"pass": "full1024", "kind": "body", "chains": ["skirtL", "skirtR"]},
+    "neck":        {"pass": "full", "kind": "neck"},
+    "topwear":     {"pass": "full1024", "kind": "body", "chains": ["skirtL", "skirtR"]},
+    "headwear":    {"image": "../assets/aoi/headwear.png", "kind": "headwear", "z": -0.15, "chains": ["ribbon"]},
+    "ears-r":      {"pass": "head", "kind": "ears", "z": -0.05},
+    "ears-l":      {"pass": "head", "kind": "ears", "z": -0.05},
+    "face":        {"pass": "head", "kind": "face"},
+    "nose":        {"pass": "head", "kind": "facepart", "z": 0.12},
+    "mouth":       {"pass": "head", "kind": "facepart", "z": 0.03,
+                    "opacity": [{"oneMinusSum": ["MouthSurprised", "MouthWorried", "MouthHappy", "MouthShy"], "lo": 0.499, "hi": 0.5},
+                                ["MouthOpenY", [[0.179, 1], [0.18, 0]]]]},
+    "eyewhite-r":  {"pass": "head", "kind": "facepart", "z": 0.0,
+                    "opacity": [{"oneMinusSum": ["EyeHappy", "EyeSurprised", "EyeWorried", "EyeShy"], "lo": 0.499, "hi": 0.5}, ["EyeROpen", [[0.629, 0], [0.63, 1]]]]},
+    "irides-r":    {"pass": "head", "kind": "facepart", "z": 0.01, "clip": ["eyewhite-r"],
+                    "deformers": [{"type": "iris", "eye": "R"}],
+                    "opacity": [{"oneMinusSum": ["EyeHappy", "EyeSurprised", "EyeWorried", "EyeShy"], "lo": 0.499, "hi": 0.5}, ["EyeROpen", [[0.629, 0], [0.63, 1]]]]},
+    "eyelash-r":   {"pass": "head", "kind": "facepart", "z": 0.02,
+                    "opacity": [{"oneMinusSum": ["EyeHappy", "EyeSurprised", "EyeWorried", "EyeShy"], "lo": 0.499, "hi": 0.5}, ["EyeROpen", [[0.629, 0], [0.63, 1]]]]},
+    "eyewhite-l":  {"pass": "head", "kind": "facepart", "z": 0.0,
+                    "opacity": [{"oneMinusSum": ["EyeHappy", "EyeSurprised", "EyeWorried", "EyeShy"], "lo": 0.499, "hi": 0.5}, ["EyeLOpen", [[0.629, 0], [0.63, 1]]]]},
+    "irides-l":    {"pass": "head", "kind": "facepart", "z": 0.01, "clip": ["eyewhite-l"],
+                    "deformers": [{"type": "iris", "eye": "L"}],
+                    "opacity": [{"oneMinusSum": ["EyeHappy", "EyeSurprised", "EyeWorried", "EyeShy"], "lo": 0.499, "hi": 0.5}, ["EyeLOpen", [[0.629, 0], [0.63, 1]]]]},
+    "eyelash-l":   {"pass": "head", "kind": "facepart", "z": 0.02,
+                    "opacity": [{"oneMinusSum": ["EyeHappy", "EyeSurprised", "EyeWorried", "EyeShy"], "lo": 0.499, "hi": 0.5}, ["EyeLOpen", [[0.629, 0], [0.63, 1]]]]},
+    "front hair":  {"pass": "full", "kind": "hair_front", "z": 0.06, "chains": ["sideLockL", "sideLockR", "bangs"]},
+    "eyebrow-r":   {"pass": "head", "kind": "facepart", "z": 0.14, "deformers": [{"type": "brow", "side": "R"}],
+                    "opacity": [{"oneMinusSum": ["BrowHappy", "BrowSurprised", "BrowWorried", "BrowShy"], "lo": 0.499, "hi": 0.5}]},
+    "eyebrow-l":   {"pass": "head", "kind": "facepart", "z": 0.14, "deformers": [{"type": "brow", "side": "L"}],
+                    "opacity": [{"oneMinusSum": ["BrowHappy", "BrowSurprised", "BrowWorried", "BrowShy"], "lo": 0.499, "hi": 0.5}]}
+  },
+
+  "cleanup": [{"layer": "back hair", "under": ["face", "neck"], "grow": 6},
+              {"layer": "neck", "under": ["face"], "grow": 3}],
+
+  "lift_over": [{"parts": ["eyelash-l", "eyewhite-l", "irides-l"], "occluder": "front hair", "name": "eyelash-l-front"},
+                {"parts": ["eyelash-r", "eyewhite-r", "irides-r"], "occluder": "front hair", "name": "eyelash-r-front"}],
+
+  "split_behind": [{"layer": "topwear", "front": "neck"}],
+
+  "split_front": [{"layer": "headwear", "occluder": "front hair"}],
+  "front_overrides": {"headwear-front": {"z": 0.1}},
+
+  "order": ["back hair", "legwear", "handwear-r", "handwear-l", "bottomwear", "topwear-back", "neck", "topwear", "headwear",
+            "ears-r", "ears-l", "face", "nose", "mouth",
+            "eyewhite-r", "irides-r", "eyelash-r", "eyewhite-l", "irides-l", "eyelash-l",
+            "front hair", "eyelash-r-front", "eyelash-l-front", "headwear-front", "eyebrow-r", "eyebrow-l"],
+
+  "restore": {"enabled": true, "strength": 1.0, "boundary_tags": ["eyewhite-l", "eyewhite-r"]},
+
+  "expressions": {
+    "box": [235, 30, 797, 592],
+    "images": {
+      "eye_closed": "../assets/aoi/expressions/eye_closed.png",
+      "eye_half": "../assets/aoi/expressions/eye_half.png",
+      "happy": "../assets/aoi/expressions/happy.png",
+      "surprised": "../assets/aoi/expressions/surprised.png",
+      "worried": "../assets/aoi/expressions/worried.png",
+      "shy": "../assets/aoi/expressions/shy.png",
+      "mouth_open": "../assets/aoi/expressions/mouth_open.png",
+      "mouth_half": "../assets/aoi/expressions/mouth_half.png",
+      "brow_clear": "../assets/aoi/expressions/brow_clear.png"
+    },
+    "eyes": {
+      "happy":     {"opacity": [["EyeHappy", [[0.499, 0], [0.5, 1]]]], "blinks": false},
+      "surprised": {"opacity": [["EyeSurprised", [[0.499, 0], [0.5, 1]]], ["Eye{S}Open", [[0.629, 0], [0.63, 1]]]], "blinks": false},
+      "worried": {"opacity": [["EyeWorried", [[0.499, 0], [0.5, 1]]], ["Eye{S}Open", [[0.629, 0], [0.63, 1]]]], "blinks": false},
+      "shy": {"opacity": [["EyeShy", [[0.499, 0], [0.5, 1]]], ["Eye{S}Open", [[0.629, 0], [0.63, 1]]]], "blinks": false},
+      "eye_half":  {"opacity": [["Eye{S}Open", [[0.229, 0], [0.23, 1], [0.629, 1], [0.63, 0]]],
+                                 {"oneMinusSum": ["EyeHappy"], "lo": 0.499, "hi": 0.5}],
+                    "blinks": false},
+      "eye_closed": {"opacity": [["Eye{S}Open", [[0.229, 1], [0.23, 0]]],
+                                 {"oneMinusSum": ["EyeHappy"], "lo": 0.499, "hi": 0.5}],
+                     "blinks": false}
+    },
+    "brows": {
+      "backing": "brow_clear",
+      "variants": {
+        "surprised": {"opacity": [["BrowSurprised", [[0.499, 0], [0.5, 1]]]]},
+        "worried":   {"opacity": [["BrowWorried", [[0.499, 0], [0.5, 1]]]]},
+        "shy":       {"opacity": [["BrowShy", [[0.499, 0], [0.5, 1]]]]},
+        "happy":     {"opacity": [["BrowHappy", [[0.499, 0], [0.5, 1]]]]}
+      }
+    },
+    "mouth": {
+      "mouth_half": {"opacity": [["MouthOpenY", [[0.179, 0], [0.18, 1], [0.529, 1], [0.53, 0]]],
+                                 {"oneMinusSum": ["MouthSurprised"], "lo": 0.499, "hi": 0.5}]},
+      "mouth_open": {"opacity": [["MouthOpenY", [[0.529, 0], [0.53, 1]]],
+                                 {"oneMinusSum": ["MouthSurprised"], "lo": 0.499, "hi": 0.5}]},
+      "surprised":  {"opacity": [["MouthSurprised", [[0.499, 0], [0.5, 1]]]]},
+      "worried":    {"opacity": [["MouthWorried", [[0.499, 0], [0.5, 1]]], ["MouthOpenY", [[0.179, 1], [0.18, 0]]]]},
+      "happy":      {"opacity": [["MouthHappy", [[0.499, 0], [0.5, 1]]], ["MouthOpenY", [[0.179, 1], [0.18, 0]]]]},
+      "shy":        {"opacity": [["MouthShy", [[0.499, 0], [0.5, 1]]], ["MouthOpenY", [[0.179, 1], [0.18, 0]]]]}
+    }
+  },
+
+  "expression_presets": [
+    {"id": "neutral", "label": "通常", "params": {}},
+    {"id": "happy", "label": "にっこり", "params": {"EyeHappy": 1, "BrowHappy": 1, "MouthHappy": 1, "MouthForm": 0.6}},
+    {"id": "surprised", "label": "驚き", "params": {"EyeSurprised": 1, "BrowSurprised": 1, "MouthSurprised": 1, "BrowLY": 0.3, "BrowRY": 0.3}},
+    {"id": "worried", "label": "困り", "params": {"EyeWorried": 1, "BrowWorried": 1, "MouthWorried": 1, "MouthForm": -0.6}},
+    {"id": "shy", "label": "照れ", "params": {"EyeShy": 1, "BrowShy": 1, "MouthShy": 1, "AngleY": -6}}
+  ],
+
+  "views": {
+    "full": {"x": 518, "y": 758, "zoom": 1.0},
+    "bust": {"x": 518, "y": 470, "zoom": 1.75},
+    "face": {"x": 518, "y": 300, "zoom": 3.0},
+    "kf": {"x": 520, "y": 430, "zoom": 1.7628}
+  }
+}

@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<link rel="icon" href="data:,">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>See-through Rig Editor</title>
+<link rel="stylesheet" href="css/editor.css">
+</head>
+<body>
+<header>
+  <h1>See-through Rig <span>Editor</span></h1>
+  <div class="bar">
+    <select id="view"></select>
+    <label><input type="checkbox" id="wire"> メッシュ</label>
+    <label><input type="checkbox" id="guides" checked> ガイド</label>
+    <select id="bg">
+      <option value="0.93,0.94,0.96,1">背景: 明</option>
+      <option value="0.16,0.17,0.2,1">背景: 暗</option>
+      <option value="0.47,0.78,0.47,1">背景: 緑</option>
+      <option value="0,0,0,0">背景: 透明</option>
+    </select>
+    <span id="fps"></span>
+  </div>
+</header>
+<main>
+  <aside id="left" aria-label="風・瞬き・呼吸とパラメータ">
+    <section>
+      <h2>再生設定（モデルに保存）</h2>
+      <div id="playbackSettingsLeft"></div>
+    </section>
+    <section>
+      <h2>プレビュー操作</h2>
+      <div class="buttons">
+        <button id="talk">テスト発話</button>
+        <button id="mic">マイク口パク</button>
+        <button id="demo">デモ再生</button>
+        <button id="resetParams">パラメータ初期化</button>
+      </div>
+    </section>
+    <section>
+      <h2>表情</h2>
+      <div class="buttons" id="exprs"></div>
+    </section>
+    <section>
+      <h2>パラメータ</h2>
+      <div id="params"></div>
+    </section>
+  </aside>
+  <div id="stage" role="region" aria-label="キャラクタープレビュー">
+    <canvas id="gl"></canvas>
+    <canvas id="overlay"></canvas>
+    <div id="hint">ドラッグ: 顔の向き / 右ドラッグ: 移動 / ホイール: ズーム</div>
+  </div>
+  <aside id="right" aria-label="待機・視線・物理とモデル調整">
+    <section>
+      <h2>再生設定（モデルに保存）</h2>
+      <div id="playbackSettingsRight"></div>
+    </section>
+    <section>
+      <h2>リグ調整</h2>
+      <div id="rig"></div>
+    </section>
+    <section>
+      <h2>揺れ（物理）</h2>
+      <select id="chainSel"></select>
+      <div id="chain"></div>
+    </section>
+    <section>
+      <h2>レイヤー</h2>
+      <div id="layers"></div>
+    </section>
+    <section class="buttons">
+      <button id="save">設定を保存</button>
+      <button id="export">設定をダウンロード</button>
+      <span id="status"></span>
+    </section>
+  </aside>
+</main>
+<script type="module" src="js/editor.js"></script>
+</body>
+</html>
