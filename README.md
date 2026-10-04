@@ -5,14 +5,13 @@ See-through Rig は、一枚のイラストから操作可能な 2D キャラク
 として動く頭、表情・瞬き・ウィンク、視線、5 母音、呼吸、体の動き、髪・
 リボン・服の束ごとの物理を、依存なしの WebGL2 ランタイムで再生します。
 
-[![Aoi showcase](docs/media/aoi-showcase.jpg)](https://ttttdiva.github.io/SeeThroughRig/showcase.html)
+[![Aoi showcase](docs/media/aoi-showcase.jpg?v=editor20bust)](https://ttttdiva.github.io/SeeThroughRig/showcase.html)
 
 [Aoi showcase ページ](https://ttttdiva.github.io/SeeThroughRig/showcase.html) では、
-実際の再生パラメータを表示する HUD 付きの 45 秒動画を見られます。GitHub
-Pages が利用できない場合は [MP4 を直接ダウンロード](docs/media/aoi-showcase.mp4)
-できます。動画中の HUD には `AngleZ`、`AngleY`、`BodyAngleX/Y/Z`、`Breath`、
-視線、瞬き、`MouthOpenY`、`MouthVowel`、`Wind`、`WindBlow`、`PhysicsGain`
-が表示されます。
+葵の顔と上半身を大きく映し、左右にある実際の WebGL エディタのスライダーを操作しながら、
+表情、視線、口パク、呼吸、体の動き、物理を確認できる 20 秒の動画を見られます。
+風は開始フレームから有効です。GitHub Pages が利用できない場合は
+[MP4 を直接ダウンロード](docs/media/aoi-showcase.mp4?v=editor20bust)できます。
 
 ## 同梱モデルを試す
 
@@ -26,8 +25,8 @@ cd SeeThroughRig
 python -m http.server 8000 --directory .
 ```
 
-[動画ページ](http://127.0.0.1:8000/showcase.html)、[対話的な WebGL showcase](http://127.0.0.1:8000/web/showcase.html)、
-または
+[動画ページ](http://127.0.0.1:8000/showcase.html)、[対話的な WebGL エディタ](http://127.0.0.1:8000/web/editor.html)、
+[モーション再生](http://127.0.0.1:8000/web/showcase.html)、または
 `http://127.0.0.1:8000/web/player.html?model=models/aoi&motion=motions/showcase.json`
 を開いてください。ブラウザは `file:///` からの module・texture 読み込みを
 制限するため、静的サーバー経由で開きます。
@@ -54,8 +53,8 @@ python -m seethrough_rig.integration validate `
 - 髪、リボン、胸の紐、スカートはばねと風で束ごとに追従します。`WindBlow` は
   showcase の強い風の動きを表します。
 
-変形、物理、表情切り替え、描画は一つの正本ランタイムで処理されます。showcase
-の HUD は値とカメラを表示するだけで、リグや物理を別実装しません。
+変形、物理、表情切り替え、描画は一つの正本ランタイムで処理されます。エディタの
+操作画面は値を調整するだけで、リグや物理を別実装しません。
 
 ## ディレクトリ
 

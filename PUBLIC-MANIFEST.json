@@ -2,7 +2,7 @@
   "schema_version": 1,
   "tool_version": "1",
   "projection": "aoi-public-v1",
-  "source_commit": "0d597332049a4662daa76528c449ea96d4c26cec",
+  "source_commit": "f884e4c7e2f86f55ac34e71705ee468469ced8d7",
   "source_dirty": false,
   "source_worktree_dirty": true,
   "source_repository": "private source checkout (URL intentionally omitted)",
@@ -32,9 +32,9 @@
     {
       "path": "README.md",
       "source_path": "README.md",
-      "size": 6673,
-      "sha256": "7c60c669e56e6724acaa9421bc9f36dc53e31065b5b9941a402ba7ea091268d3",
-      "source_sha256": "7c60c669e56e6724acaa9421bc9f36dc53e31065b5b9941a402ba7ea091268d3"
+      "size": 6781,
+      "sha256": "e290059ef94e46495cae1c0043ee9db6059ef724394b119855190acd681c75b4",
+      "source_sha256": "e290059ef94e46495cae1c0043ee9db6059ef724394b119855190acd681c75b4"
     },
     {
       "path": "artifacts/models/kotonoha-aoi.zip",
@@ -243,16 +243,16 @@
     {
       "path": "docs/media/aoi-showcase.jpg",
       "source_path": "docs/media/aoi-showcase.jpg",
-      "size": 208726,
-      "sha256": "4513a9a5d7e9bf339e939482bac8c63c736d7b67a968275e16efa4937169f97e",
-      "source_sha256": "4513a9a5d7e9bf339e939482bac8c63c736d7b67a968275e16efa4937169f97e"
+      "size": 293453,
+      "sha256": "e5991847c2df8098e4c577ee66c98af484ebe3ef6082924c4ad8d5597fd6262b",
+      "source_sha256": "e5991847c2df8098e4c577ee66c98af484ebe3ef6082924c4ad8d5597fd6262b"
     },
     {
       "path": "docs/media/aoi-showcase.mp4",
       "source_path": "docs/media/aoi-showcase.mp4",
-      "size": 13476221,
-      "sha256": "eace4f34d363acbdd8ed23f515425d349d008cf6cd442b21d4ee9dac142e191f",
-      "source_sha256": "eace4f34d363acbdd8ed23f515425d349d008cf6cd442b21d4ee9dac142e191f"
+      "size": 8605719,
+      "sha256": "270f0af867ec6fda55d2777f4fd9c66bb83a8b196df09eb53dbcba5cf2d3146e",
+      "source_sha256": "270f0af867ec6fda55d2777f4fd9c66bb83a8b196df09eb53dbcba5cf2d3146e"
     },
     {
       "path": "docs/production-integration.md",
@@ -279,9 +279,9 @@
     {
       "path": "docs/technical-guide.md",
       "source_path": "docs/technical-guide.md",
-      "size": 18971,
-      "sha256": "1618def1162a66ab5250353a1950140f7e083ee69c4890505eabe9c1b32a6841",
-      "source_sha256": "50c0fb9c8691cf69232bac272142dc8f243f395c301e88b72e38a51ab0e8834f",
+      "size": 19169,
+      "sha256": "3bc4c8edad306473b60ade5b18521468abc943d4246bf949c5f317ab2d20ee34",
+      "source_sha256": "a468b641f52abbf086f3e40ca065d48a1ba109656827428a8ad9ae27b31261e4",
       "transform": "public-redaction-v1"
     },
     {
@@ -364,9 +364,9 @@
     {
       "path": "scripts/record_showcase.py",
       "source_path": "scripts/record_showcase.py",
-      "size": 15168,
-      "sha256": "16deeac4858aaff491ac56ecb0cdbb6a1a14904b7f8bc6239297ecab9125532e",
-      "source_sha256": "16deeac4858aaff491ac56ecb0cdbb6a1a14904b7f8bc6239297ecab9125532e"
+      "size": 27418,
+      "sha256": "8d62cf839b45b448f80207abff883ca45022616d1830c06154667e4463d2a204",
+      "source_sha256": "8d62cf839b45b448f80207abff883ca45022616d1830c06154667e4463d2a204"
     },
     {
       "path": "scripts/register_face_keys.py",
@@ -546,9 +546,9 @@
     {
       "path": "showcase.html",
       "source_path": "showcase.html",
-      "size": 2976,
-      "sha256": "412674daa75e4143f8e0b8c30b025005f705ffd6b9874735b6d4af09290dcf30",
-      "source_sha256": "412674daa75e4143f8e0b8c30b025005f705ffd6b9874735b6d4af09290dcf30"
+      "size": 3283,
+      "sha256": "7108ca277c34401ce72536411011d9d7de0fe2579afc9829daabd5f059488fb0",
+      "source_sha256": "7108ca277c34401ce72536411011d9d7de0fe2579afc9829daabd5f059488fb0"
     },
     {
       "path": "tests/js/editor.test.mjs",
@@ -1190,5 +1190,19 @@
       "headYaw": false
     }
   },
-  "manifest_sha256": "62c86cecfaff8827374fd01ff3d75f5e6560635e995a841705a326e56910da4b"
+  "base_release_source_commit": "0d597332049a4662daa76528c449ea96d4c26cec",
+  "media_update": {
+    "source_commit": "f884e4c7e2f86f55ac34e71705ee468469ced8d7",
+    "base_release_source_commit": "0d597332049a4662daa76528c449ea96d4c26cec",
+    "previous_public_commit": "fe53bcb5ef8880be9436964b9c0e0e01a90e3d39",
+    "changed_files": [
+      "README.md",
+      "showcase.html",
+      "docs/technical-guide.md",
+      "scripts/record_showcase.py",
+      "docs/media/aoi-showcase.mp4",
+      "docs/media/aoi-showcase.jpg"
+    ]
+  },
+  "manifest_sha256": "ee27aa158a5ad395afb01a88370ab942f6b3b87c51f55907fa36235cf200d73f"
 }

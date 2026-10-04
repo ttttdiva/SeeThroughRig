@@ -5,9 +5,9 @@
 イラストを部位レイヤーに分けます。そこにメッシュ・変形器・物理演算・表情差分を自動で組み、
 ブラウザ上のエディタで動かしながら調整します。
 
-![Aoi showcase](media/aoi-showcase.jpg)
+![Aoi showcase](media/aoi-showcase.jpg?v=editor20bust)
 
-- 確認用動画：[Aoi showcase](../showcase.html)（45 秒、1920×1080）。動画ファイルは [media/aoi-showcase.mp4](media/aoi-showcase.mp4)
+- 確認用動画：[Aoi showcase](../showcase.html)（20 秒、1920×1080）。葵の顔と上半身を大きく映し、左右にある実際のエディタスライダーを操作し、開始フレームから風を有効にした録画です。動画ファイルは [media/aoi-showcase.mp4](media/aoi-showcase.mp4?v=editor20bust)
 - 既定のモデルは `models/aoi`（レシピ `recipes/aoi_vowels.json`）。目・5母音の採用記録は [face-keys-release.md](face-keys-release.md)、従来の経緯は [CANDIDATES.md](CANDIDATES.md)
 - 対応する動き：首をかしげる・うなずく、体の傾き、呼吸、視線、瞬き・ウィンク、口パク、
   表情（通常／にっこり／驚き／困り／照れ）、体全体の前後（近づく・遠のく）と左右の重心移動、
